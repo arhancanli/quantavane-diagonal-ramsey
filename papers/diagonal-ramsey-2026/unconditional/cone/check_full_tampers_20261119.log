@@ -1,0 +1,9 @@
+Thu Nov 19 15:20:05 +04 2026
+green: FULL CHECK OK
+zr_in_call: FULL CHECK REFUSED: ZBS reference ['zr', 5] at $.raw.pieces.calls.ch
+zc_in_cell: FULL CHECK REFUSED: ZBS reference ['zc', 1] at $.sources.cells.PB
+z_src: FULL CHECK REFUSED: ZBS reference ['z', 3] at $.raw.pieces.t.src
+z_hidden_in_meta: FULL CHECK REFUSED: ZBS reference ['z', 1] at $.meta.x
+string_zr: FULL CHECK REFUSED: string 'zr' at $.meta.kind
+closed_uses_closed: FULL CHECK REFUSED: profile reference kind ['nc', 0]
+ctl_out_of_range: FULL CHECK REFUSED: control index 1

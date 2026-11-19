@@ -1,0 +1,51 @@
+loaded 1 s
+locations {'leaf': (2195, 0), 'route': (2196, 0), 'rootQ': 13, 'U': 0, 'src': 32}
+UNTAMPERED leaf                                                ACCEPTED
+UNTAMPERED route                                               ACCEPTED
+UNTAMPERED closed root piece                                   ACCEPTED
+UNTAMPERED source                                              ACCEPTED
+leaf: control p > P.p                                          refused  AssertionError: leaf density / margin
+leaf: interior knot dropped from bp                            refused  AssertionError: knot 37/50 missing from breakpoints
+leaf: margin 0                                                 refused  AssertionError: leaf density / margin
+leaf: xi = x                                                   refused  AssertionError: xi in (0, x)
+leaf: ys = 0                                                   refused  AssertionError: nu, ys
+leaf: nu = mu                                                  refused  AssertionError: nu, ys
+leaf: aU - 1e-30                                               ACCEPTED
+leaf: lo = 0 (bp[0]=0)                                         refused  AssertionError: breakpoint ends
+leaf: src -> ZBS source 0 (B_sigma changes)                    refused  AssertionError: xi < exp(-A_sigma)
+leaf: control index -1                                         refused  AssertionError: negative certificate index
+route: P.p = control p (non-strict)                            refused  AssertionError: route density strictly below
+route: hm = 0                                                  refused  AssertionError: route parameters
+route: g0 = 0                                                  refused  AssertionError: route parameters
+route: one call removed                                        refused  AssertionError: route sizes
+route: one extra call                                          refused  AssertionError: route sizes
+route: hi beyond us[-1]                                        refused  AssertionError: route parameters
+route: theta above lo                                          refused  AssertionError: partition increases
+route: z = 1 - p_child                                         refused  AssertionError: cell slope > -log(1 - p_child)
+route: child -> nr index -1                                    refused  AssertionError: negative certificate index
+route: child -> unknown kind                                   refused  KeyError: 'xx'
+route: child bp interior point dropped                         refused  AssertionError: knot 291/400 missing from breakpoints
+route: margin 0                                                refused  AssertionError: route parameters
+route: terminal ys = 0                                         refused  AssertionError: nu, ys
+route: terminal xi = x                                         refused  AssertionError: xi in (0, x)
+route: ds[0] -> 0 (slope too small)                            refused  AssertionError: cell slope > -log(1 - p_child)
+closed root: R,S -> closed profile                             refused  AssertionError: closed uses raw
+closed root: R p raised (p_R + p_S > 1)                        refused  AssertionError: pair densities / domain
+closed root: Q value at 1 lowered by 1e-15                     refused  AssertionError: closed R <= Q
+closed root: Q value at 1+delta lowered (reflected fails)      ACCEPTED
+closed root: bp drops knot 1                                   refused  AssertionError: knot 1 missing from breakpoints
+closed root: kind density with p_R <= p_Q (allowed, check R<=Q only) ACCEPTED
+closed U: pair -> density copy (p_R > p_Q=1e-6)                refused  AssertionError: density copy order
+source: eps = 0                                                refused  AssertionError: source parameters
+source: kL = -1                                                refused  AssertionError: negative certificate index
+source: kL out of range                                        refused  IndexError: list index out of range
+source: last cell dropped (cover short of Hi)                  refused  AssertionError: cells end at Hi
+source: gap between first two cells                            refused  AssertionError: cells chain
+source: grounded k = -1                                        refused  AssertionError: negative certificate index
+source: pair PR -> ZBS raw 0                                   refused  AssertionError: pair
+source: A lowered by 1e-6                                      refused  AssertionError: grounded cell
+source: Hi beyond right tail line validity (Hi lowered, chain kept?) refused  AssertionError: cells end at Hi
+root: piece kind density                                       refused  AssertionError: root piece is a complementary pair
+root: z claimed 1e-15 lower                                    refused  AssertionError: claimed z
+root: closed index -1                                          refused  AssertionError: negative certificate index
+done 4 s

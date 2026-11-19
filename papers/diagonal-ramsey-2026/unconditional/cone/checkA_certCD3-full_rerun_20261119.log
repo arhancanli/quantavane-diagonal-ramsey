@@ -1,0 +1,5 @@
+Thu Nov 19 18:52:35 +04 2026
+18:52  up 3 days, 19:20, 5 users, load averages: 19.17 23.51 27.04
+{"checker": "A", "ok": true, "sources": 7574, "raw": 4099, "raw_pieces": 51645, "closed": 1015, "controls": 2747, "controls_lemmaD": 25, "claim": "assuming Theorem A (ramsey-lemma; 25 Lemma D controls)", "z": "311946616731/250000000000", "z_float": 1.247786466924, "base_upper": "278610041/80000000", "base_upper_dec": "3.4826255125", "seconds": 1954.2}
+EXIT 0
+Thu Nov 19 19:25:10 +04 2026

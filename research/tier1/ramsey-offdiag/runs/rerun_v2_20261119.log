@@ -1,0 +1,34 @@
+21:54:41 gate ok, load 54
+checkA cd3 exit 0
+21:54:59 gate ok, load 53
+checkA k3 exit 0
+21:55:17 gate ok, load 54
+made ['r10_unknown_kind.json', 'r11_g_lo_changed.json', 'r1_pair_vhi_minus_1e-9.json', 'r2_src_vlo_minus_1e-9.json', 'r3_density_sum_above_1.json', 'r4_tiling_gap.json', 'r5_wrong_bank_sha.json', 'r6_R_interval_misses_cell.json', 'r7_string_index.json', 'r8_src_orientation_swapped.json', 'r9_last_cell_missing.json']
+21:55:40 gate ok, load 54
+red/green failures: 0
+21:59:02 waiting, load 62
+21:59:32 waiting, load 62
+22:00:02 waiting, load 66
+22:00:32 waiting, load 67
+22:01:02 waiting, load 74
+22:01:32 waiting, load 73
+22:02:02 waiting, load 82
+22:02:32 waiting, load 77
+22:03:03 waiting, load 78
+22:03:33 waiting, load 77
+22:04:03 waiting, load 81
+22:04:33 waiting, load 82
+22:05:03 waiting, load 99
+22:05:33 waiting, load 99
+22:06:03 waiting, load 87
+22:06:33 waiting, load 75
+22:07:03 waiting, load 71
+22:07:33 waiting, load 72
+22:08:03 waiting, load 62
+22:08:33 gate ok, load 49
+red/green failures: 0
+22:10:16 gate ok, load 49
+vs2 cd3 exit 0
+22:12:16 gate ok, load 57
+vs2 k3 exit 1
+DONE

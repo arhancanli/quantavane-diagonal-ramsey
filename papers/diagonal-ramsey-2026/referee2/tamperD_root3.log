@@ -1,0 +1,46 @@
+control x * 1.01                         A refused  B refused
+    A: AssertionError: G0(a_cut) >= 0
+    B: AssertionError: G0(a_cut) >= 0
+control mu + 1e-9                        A refused  B refused
+    A: AssertionError: G0(a_cut) >= 0
+    B: AssertionError: G0(a_cut) >= 0
+alpha / 2                                A refused  B refused
+    A: AssertionError: alpha >= beta / |G0'(a_hi)|
+    B: AssertionError: alpha >= beta/|G0'(a_hi)|
+w -> 3 (so (1-mu)^w < x < p)             A refused  B refused
+    A: AssertionError: x < (1 - mu)^w
+    B: AssertionError: x < (1-mu)^w
+a_cut above a(0) (inside D)              A refused  B refused
+    A: AssertionError: G0(a_cut) >= 0
+    B: AssertionError: G0(a_cut) >= 0
+y_c - 1e-3                               A refused  B refused
+    A: AssertionError: y_c >= Ht'(mu)
+    B: AssertionError: y_c >= Ht'(mu)
+u_b -> u_b * 2/3                         A refused  B refused
+    A: AssertionError: (1 - u_b)/D must be a positive integer
+    B: AssertionError: u_b, D
+D not dividing 1-u_b                     A refused  B refused
+    A: AssertionError: (1 - u_b)/D must be a positive integer
+    B: AssertionError: u_b, D
+G_up below g(u_b)                        A refused  B refused
+    A: AssertionError: G_up >= g(u_b)
+    B: AssertionError: G_up >= g(u_b)
+jA0 -> last node (no slope data)         A refused  B refused
+    A: AssertionError: box [0.042271533628125, 0.04508963587, 1.26153660232425, 1.502987830003] failed: q_A below
+    B: AssertionError: box (0, 4508963587/400000000000, -428621991427/1000000000000, 108560927861/2000000000000) 
+tree -> single leaf                      A refused  B refused
+    A: AssertionError: box [0.0, 0.04508963587, -0.428621991427, 1.502987830003]: U = 0.0023297058760903566 >= 0 
+    B: AssertionError: box (0, 4508963587/100000000000, -428621991427/1000000000000, 1502987830003/1000000000000)
+q_1 below a_hi                           A refused  B refused
+    A: AssertionError: first interior node inside D
+    B: AssertionError: q_1 >= a_hi
+semantic: data regenerated at x e^{+2e-6}, same tree A refused  B refused
+    A: AssertionError: box [0.0352262780234375, 0.036635329144375, 1.140810988484875, 1.2011737954045625]: U = 7.
+    B: AssertionError: box (13526890761/400000000000, 220939215763/6400000000000, 9126487907879/8000000000000, 19
+semantic: data regenerated at x e^{+1e-5}, same tree A refused  B refused
+    A: AssertionError: box [0.03945343138625, 0.042271533628125, 1.140810988484875, 1.26153660232425]: U = 2.0134
+    B: AssertionError: box (13526890761/400000000000, 31562745109/800000000000, 108560927861/2000000000000, 67147
+merge the worst leaf with its sibling    A refused  B refused
+    A: AssertionError: box [0.0338172269025, 0.0352262780234375, 1.140810988484875, 1.2011737954045625]: U = 2.13
+    B: AssertionError: box (13526890761/400000000000, 4508963587/128000000000, 9126487907879/8000000000000, 19218
+ALL 15 TAMPERS REFUSED BY BOTH

@@ -1,0 +1,19 @@
+Thu Nov 19 18:23:02 +04 2026
+18:23  up 3 days, 18:50, 5 users, load averages: 16.72 17.13 19.91
+5000/73302 cells, 5000 evaluations, 17 s
+10000/73302 cells, 10000 evaluations, 33 s
+15000/73302 cells, 15000 evaluations, 47 s
+20000/73302 cells, 20000 evaluations, 64 s
+25000/73302 cells, 25000 evaluations, 80 s
+30000/73302 cells, 30000 evaluations, 96 s
+35000/73302 cells, 35000 evaluations, 111 s
+40000/73302 cells, 40000 evaluations, 126 s
+45000/73302 cells, 45000 evaluations, 152 s
+50000/73302 cells, 50000 evaluations, 177 s
+55000/73302 cells, 55000 evaluations, 203 s
+60000/73302 cells, 60000 evaluations, 228 s
+65000/73302 cells, 65000 evaluations, 253 s
+70000/73302 cells, 70000 evaluations, 274 s
+SOURCE B: ALL CELLS CERTIFIED; cells 0..73302 of 73302; 80270 evaluations; min Delta/s 7.8371e-7
+EXIT 0
+Thu Nov 19 18:28:14 +04 2026

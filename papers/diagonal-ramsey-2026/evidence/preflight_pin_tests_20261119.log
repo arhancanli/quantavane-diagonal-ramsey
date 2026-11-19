@@ -1,0 +1,10 @@
+Thu Nov 19 17:59:18 +04 2026
+untouched: PREFLIGHT OK
+edit checkD_A: PREFLIGHT REFUSED: frozen Lemma D file changed: checkD_A.py
+edit checkD_A + regenerate its manifest line: PREFLIGHT REFUSED: code/lemmaD/MANIFEST.sha256 is not the pinned manifest
+edit checkD_A + delete its manifest line: PREFLIGHT REFUSED: code/lemmaD/MANIFEST.sha256 is not the pinned manifest
+manifest truncated to 5 lines: PREFLIGHT REFUSED: code/lemmaD/MANIFEST.sha256 is not the pinned manifest
+restored: PREFLIGHT OK
+edit checkA/ivA.py: PREFLIGHT REFUSED: checkA/ivA.py differs from the frozen lemmaD/ivA.py
+restored ivA: PREFLIGHT OK
+EXIT 0

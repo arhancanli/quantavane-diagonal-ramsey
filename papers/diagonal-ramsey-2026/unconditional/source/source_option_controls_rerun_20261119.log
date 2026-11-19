@@ -1,0 +1,14 @@
+Thu Nov 19 18:22:53 +04 2026
+== OPTION AND RANGE CONTROLS (audit S-1, S-2): each must be refused
+REFUSED as required (source_A --require without =): refusing malformed option '--require' (use --key=value)
+REFUSED as required (source_A misspelt key --requre): refusing unknown option '--requre' (known: --alpha, --from, --partial, --require, --to)
+REFUSED as required (source_A empty range --from=73302): refusing the empty or out-of-range cell range 73302..73302 of 73302
+CONTROL FAILED (source_A part range without --partial=yes): exit 1: f is C^1 on (0, 1]; f'' < 0 certified on every piece (2279 sub-intervals)
+cells 73200..73302 is only part of the 73302 cells; pass --partial=yes to run a partial range
+CONTROL FAILED (source_A option given twice): exit 1: option --require given twice
+REFUSED as required (source_B --require without =): refusing malformed option '--require' (use --key=value)
+REFUSED as required (source_B misspelt key --requre): refusing unknown option '--requre' (known: --alpha, --from, --partial, --require, --to)
+REFUSED as required (source_B empty range --from=73302): refusing the empty or out-of-range cell range 73302..73302 of 73302
+CONTROL FAILED (source_B part range without --partial=yes): exit 1: cells 73200..73302 is only part of the 73302 cells; pass --partial=yes to run a partial range
+CONTROL FAILED (source_B option given twice): exit 1: option --require given twice
+Thu Nov 19 18:23:02 +04 2026

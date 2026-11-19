@@ -1,0 +1,51 @@
+loaded 3 s
+locations {'leaf': (1391, 0), 'route': (1392, 0), 'rootQ': 9, 'U': 0, 'src': 32}
+UNTAMPERED leaf                                                ACCEPTED
+UNTAMPERED route                                               ACCEPTED
+UNTAMPERED closed root piece                                   ACCEPTED
+UNTAMPERED source                                              ACCEPTED
+leaf: control p > P.p                                          refused  AssertionError: leaf shape
+leaf: interior knot dropped from bp                            refused  AssertionError: leaf shape
+leaf: margin 0                                                 refused  AssertionError: leaf shape
+leaf: xi = x                                                   refused  AssertionError: xi
+leaf: ys = 0                                                   refused  AssertionError: nu, ys
+leaf: nu = mu                                                  refused  AssertionError: nu, ys
+leaf: aU - 1e-30                                               ACCEPTED
+leaf: lo = 0 (bp[0]=0)                                         refused  AssertionError: leaf shape
+leaf: src -> ZBS source 0 (B_sigma changes)                    refused  AssertionError: xi < e^{-A_sigma}
+leaf: control index -1                                         refused  IndexError: negative index in certificate
+route: P.p = control p (non-strict)                            refused  AssertionError: route shape
+route: hm = 0                                                  refused  AssertionError: route range
+route: g0 = 0                                                  refused  AssertionError: us
+route: one call removed                                        refused  AssertionError: one call per cell
+route: one extra call                                          refused  IndexError: list index out of range
+route: hi beyond us[-1]                                        refused  AssertionError: route range
+route: theta above lo                                          refused  AssertionError: us
+route: z = 1 - p_child                                         refused  AssertionError: child slope 0
+route: child -> nr index -1                                    refused  IndexError: negative index in certificate
+route: child -> unknown kind                                   refused  KeyError: 'xx'
+route: child bp interior point dropped                         refused  AssertionError: child bp 0
+route: margin 0                                                refused  AssertionError: route range
+route: terminal ys = 0                                         refused  AssertionError: nu, ys
+route: terminal xi = x                                         refused  AssertionError: xi
+route: ds[0] -> 0 (slope too small)                            refused  AssertionError: child slope 0
+closed root: R,S -> closed profile                             refused  AssertionError: 
+closed root: R p raised (p_R + p_S > 1)                        refused  AssertionError: pair
+closed root: Q value at 1 lowered by 1e-15                     refused  AssertionError: closed R <= Q
+closed root: Q value at 1+delta lowered (reflected fails)      ACCEPTED
+closed root: bp drops knot 1                                   refused  AssertionError: closed R <= Q
+closed root: kind density with p_R <= p_Q (allowed, check R<=Q only) ACCEPTED
+closed U: pair -> density copy (p_R > p_Q=1e-6)                refused  AssertionError: density copy
+source: eps = 0                                                refused  AssertionError: source shape
+source: kL = -1                                                refused  IndexError: negative index in certificate
+source: kL out of range                                        refused  IndexError: list index out of range
+source: last cell dropped (cover short of Hi)                  refused  AssertionError: source chain end
+source: gap between first two cells                            refused  AssertionError: source chain
+source: grounded k = -1                                        refused  IndexError: negative index in certificate
+source: pair PR -> ZBS raw 0                                   refused  AssertionError: pair dom R
+source: A lowered by 1e-6                                      refused  AssertionError: grounded
+source: Hi beyond right tail line validity (Hi lowered, chain kept?) refused  AssertionError: source chain end
+root: piece kind density                                       refused  AssertionError: piece of Q containing 1 is a complementary pair
+root: z claimed 1e-15 lower                                    refused  AssertionError: claimed z = L_Q(1)
+root: closed index -1                                          refused  IndexError: negative index in certificate
+done 4 s

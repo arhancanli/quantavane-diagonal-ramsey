@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these certificates, proofs or programs, please cite them as below, together with Zhao-Booth-Clibborn-Schwahn, Lu-Wang, EvolvingPrograms, Campos-Griffiths-Morris-Sahasrabudhe and Gupta-Ndiaye-Norin-Wei (see README.md)."
+type: dataset
+title: "R(k,k) <= (3.4827 + o(1))^k, unconditionally, and off-diagonal bounds for R(k, gamma k)"
+abstract: "An unconditional proof, by exact certificates checked by two separately written programs, that R(k,k) <= ceil(C e^{zk}) with e^z <= 3.4826255125, and an off-diagonal exponent Phi on [1/5, 1]; built on the framework and bank of Zhao, Booth-Clibborn and Schwahn and the source of Lu and Wang, whose results used here are restated and proved. Internally refereed; not yet peer reviewed."
+authors:
+  - family-names: Canli
+    given-names: Arhan
+    affiliation: Quantavane
+    email: arhan@quantavane.com
+license: CC-BY-4.0
+url: "https://quantavane.com"
+repository-code: "https://github.com/arhancanli/quantavane-diagonal-ramsey"
+keywords:
+  - Ramsey numbers
+  - diagonal Ramsey
+  - off-diagonal Ramsey
+  - exact certificates
+  - interval arithmetic

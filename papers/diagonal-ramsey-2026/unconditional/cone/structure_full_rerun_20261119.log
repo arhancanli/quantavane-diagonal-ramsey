@@ -1,0 +1,14 @@
+Thu Nov 19 18:24:49 +04 2026
+== structure (check_full.py with the pin) on both full certificates
+no ZBS reference ("zr", "zc", "z") anywhere in <archive>/ramsey-unconditional/cone/certK3-full.json
+3023106 profile/source references and 44802 control references in range; counts: raw 3295, closed 1011, sources 6734, controls 2641
+original objects unchanged except references (1393 raw, 10 closed, 4021 sources, 1723 controls)
+appended objects equal the parsed ZBS objects (1902 raw, 1001 closed, 2713 sources, 918 controls)
+FULL CHECK OK
+no ZBS reference ("zr", "zc", "z") anywhere in <archive>/ramsey-unconditional/cone/certCD3-full.json
+3101083 profile/source references and 51645 control references in range; counts: raw 4099, closed 1015, sources 7574, controls 2747
+original objects unchanged except references (2197 raw, 14 closed, 4861 sources, 1829 controls)
+appended objects equal the parsed ZBS objects (1902 raw, 1001 closed, 2713 sources, 918 controls)
+FULL CHECK OK
+EXIT 0
+Thu Nov 19 18:27:19 +04 2026

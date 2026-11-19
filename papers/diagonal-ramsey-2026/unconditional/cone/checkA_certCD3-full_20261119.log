@@ -1,0 +1,5 @@
+Thu Nov 19 15:27:09 +04 2026
+{"checker": "A", "ok": true, "sources": 7574, "raw": 4099, "raw_pieces": 51645, "closed": 1015, "controls": 2747, "controls_lemmaD": 25, "claim": "assuming Theorem A (ramsey-lemma; 25 Lemma D controls)", "z": "311946616731/250000000000", "z_float": 1.247786466924, "base_upper": "278610041/80000000", "base_upper_dec": "3.4826255125", "seconds": 2097.6}
+zsh run_cone.sh checkA certCD3  1845.86s user 11.13s system 88% cpu 35:01.79 total
+Thu Nov 19 16:02:11 +04 2026
+EXIT 0

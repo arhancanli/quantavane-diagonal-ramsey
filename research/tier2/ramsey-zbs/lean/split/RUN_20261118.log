@@ -1,0 +1,66 @@
+# B2 local run, 18 Nov 2026 (EP DiagonalRamsey 959f46b0, Lean v4.35.0, Mathlib 56a00585), one lean process per module, nice 10
+## red control (lean/kaggle_root/QVRootRed.lean, 15:58)
+leanroot.log:RED_EXIT 1 RED_SECONDS 65
+leanroot.log:1:QVRootRed.lean:22:174: error: Tactic `decide` failed to reduce
+lean_red.log:QVRootRed.lean:22:174: error: Tactic `decide` failed to reduce
+## split modules (lean/split/QVRootSplit, 16:5x-17:16)
+START Wed Nov 18 16:55:38 +04 2026
+094060202c572cc53cceda10b7c875f93b6d8cc63f584aab8457779541678b99  -
+FORBIDDEN_LINES 0
+Data EXIT 0 SECONDS 94 MAXRSS_MB 3197
+Integral EXIT 0 SECONDS 68 MAXRSS_MB 7136
+Power EXIT 0 SECONDS 16 MAXRSS_MB 3301
+Geo EXIT 0 SECONDS 4 MAXRSS_MB 3201
+Link EXIT 0 SECONDS 6 MAXRSS_MB 3253
+Corner0 EXIT 0 SECONDS 26 MAXRSS_MB 5543
+Corner1 EXIT 0 SECONDS 25 MAXRSS_MB 5870
+Corner2 EXIT 0 SECONDS 22 MAXRSS_MB 5879
+Corner3 EXIT 0 SECONDS 25 MAXRSS_MB 5735
+Corner4 EXIT 0 SECONDS 26 MAXRSS_MB 5824
+Corner5 EXIT 0 SECONDS 25 MAXRSS_MB 5603
+Corner6 EXIT 0 SECONDS 28 MAXRSS_MB 5611
+Corner7 EXIT 0 SECONDS 26 MAXRSS_MB 5717
+Corner8 EXIT 0 SECONDS 5 MAXRSS_MB 3273
+Rows0 EXIT 0 SECONDS 91 MAXRSS_MB 3721
+Rows1 EXIT 0 SECONDS 104 MAXRSS_MB 3680
+Rows2 EXIT 0 SECONDS 104 MAXRSS_MB 3682
+Rows3 EXIT 0 SECONDS 108 MAXRSS_MB 3663
+Rows4 EXIT 0 SECONDS 107 MAXRSS_MB 3710
+Rows5 EXIT 0 SECONDS 90 MAXRSS_MB 3700
+Rows6 EXIT 0 SECONDS 106 MAXRSS_MB 3656
+Rows7 EXIT 0 SECONDS 130 MAXRSS_MB 3764
+Rows8 EXIT 0 SECONDS 20 MAXRSS_MB 3669
+Main EXIT 0 SECONDS 5 MAXRSS_MB 3129
+'QV.RamseyZBS.Root.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QV.RamseyZBS.Root.cert_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+END Wed Nov 18 17:16:51 +04 2026
+## Main output
+'QV.RamseyZBS.Root.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QV.RamseyZBS.Root.cert_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+## SHA-256 of the sources
+6bfeae0865cc94f458d9f5cacd8fae79460c01538a08badb16c7b6746d2b82ae  QVRootSplit/Corner0.lean
+84c87971e202ad808ea1a334eb0b7b79f86093fbbe4caf25be35d8ce6ecc8e56  QVRootSplit/Corner1.lean
+62f3407c78f4025b6185fd429d9ad96f0716d0220f715a2e358e241fe8aa4ae5  QVRootSplit/Corner2.lean
+6cb5862ff5b57a181d6266647f98ab13eaf179b08b3ae0db0a3dd595b771fee1  QVRootSplit/Corner3.lean
+4419a44d3a95a4de6066e35a57122827bb476eea695b68c0d41cfdb434f39f70  QVRootSplit/Corner4.lean
+f8e0b65d7fed725e095f510e48a4c26198f678584dcfb7ec4c25ce457f86e8b3  QVRootSplit/Corner5.lean
+a19c776bedbb54ecd02bab9aa48b63d915e90e367fec2f95bc0c53c51c651e02  QVRootSplit/Corner6.lean
+ee3259c5d2ba4dd6fe2c43db9ef802beb87639a7577d5ed832703d24f03b9ad6  QVRootSplit/Corner7.lean
+90eb45455016a7baefea28432d7ff93fb25a1aec2dca99611b3d545d96ce8810  QVRootSplit/Corner8.lean
+dd5a60a3704b8970ffc86957a2a41c6e9a18d7d750ac06f9e8070bb3e8e61933  QVRootSplit/Data.lean
+289457b0be0c7b9ca819a6b3839b48061883da6539dede0f854f9ff91a8f5c6b  QVRootSplit/Geo.lean
+b1feed35124ce5d009b2b65d8520da092dac9ea3614d2dd1f2c347d835923761  QVRootSplit/Integral.lean
+bcd7c68e3db4a0ab71393cb99d7a88887e2568c68655979f20d967c0c0c77792  QVRootSplit/Link.lean
+2842e9e9c7d8ffe6fbd647428418556efaa325bf9ae86720ad89ef0bff7a3ac8  QVRootSplit/Main.lean
+13f5fb6446d43b935db4d5cb6d3441d055153a9e218448ae2b632d47f8d093c8  QVRootSplit/Power.lean
+32c8692f5a32d2e2d30376c35bdcc79ee787db2421481abfb8ca007a46a038c9  QVRootSplit/Rows0.lean
+76285bfb52b6567d4b1eec12b9029fe37122c836bd874fc1c5d9caa9fe139bfb  QVRootSplit/Rows1.lean
+f9f47cca95e51b13bfa29d79c3a05ef5e449b07bd2b42c1fa568afdbf3df6ad8  QVRootSplit/Rows2.lean
+9d4ddec4c0fddc9738040135bdc3216d7297e0f875a95f63097833ef3d7d193b  QVRootSplit/Rows3.lean
+47749efb315e1ca9f4a03dad379d2b514a7096af749cb690b8dbcf4873bf2425  QVRootSplit/Rows4.lean
+8a6922582217cfc5dfc9a696f9214c6a9c475e14dfb49d471a2d23c39ce792c2  QVRootSplit/Rows5.lean
+a458a49f5ad56cc7129d3c6678f0b4398a2cef9a0941de62bf5b5f47a1595dc4  QVRootSplit/Rows6.lean
+667fec9da1feb89b5db815f5cb9f6a97855365ce73361031d6e5cf92dc41ffcc  QVRootSplit/Rows7.lean
+05cf1997a7eb20e4f591b91699823100ca41b751a3c52a697a57a76cb1981e2e  QVRootSplit/Rows8.lean
+e8b38436bb2771aa35ec1627b1f4d92272a7bb8e25c7719d0070533ce5b9c045  order.txt
+8227458b65d19faa2755bf4af748a70019357a165f7fae97df6732f3f69acb8d  gen_split.py

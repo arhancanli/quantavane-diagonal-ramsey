@@ -1,0 +1,13 @@
+refused OK  r10_unknown_kind.json: REFUSED: cell 1400: unknown kind 'leaf'
+refused OK  r11_g_lo_changed.json: REFUSED: cell 0: lo 1/5 != g_lo 1/4
+refused OK  r1_pair_vhi_minus_1e-9.json: REFUSED: cell 1400: g*L_S(1/g) exceeds Phi at g=1801/2000 by 997161/1000000000000000
+refused OK  r2_src_vlo_minus_1e-9.json: REFUSED: cell 0: src bound exceeds Phi at g=1/5 by 499/500000000000
+refused OK  r3_density_sum_above_1.json: REFUSED: cell 800: p_R + p_S = 47/80 + 67/160 > 1
+refused OK  r4_tiling_gap.json: REFUSED: cell 100: lo 250000000001/1000000000000 != previous hi 1/4 (tiling broken)
+refused OK  r5_wrong_bank_sha.json: REFUSED: cert: bank_sha256 '0000000000000000000000000000000000000000000000000000000000000000' does not match the bank file's SHA-256 32bcafd3fccbf094c83cc942669b3b843f09a3b10f87a6bd6a465d112bb07af8
+refused OK  r6_R_interval_misses_cell.json: REFUSED: cell 1400: [lo, hi] = [9/10, 1801/2000] not inside I_R = [1/80, 81/400] (bank.raw[0])
+refused OK  r7_string_index.json: REFUSED: cell 1400.R: index must be a JSON integer, got str '1826'
+refused OK  r8_src_orientation_swapped.json: REFUSED: cell 0: src bound exceeds Phi at g=1/5 by 2964811185499/2500000000000
+refused OK  r9_last_cell_missing.json: REFUSED: cert: last hi 9999999999/10000000000 != 1
+green OK  clean certificate accepted
+red/green failures: 0

@@ -1,0 +1,10 @@
+22:19:32 waiting, load 72
+22:20:02 waiting, load 65
+22:20:32 waiting, load 61
+22:21:02 waiting, load 65
+22:21:32 gate ok, load 55; memory System-wide memory free percentage: 62%
+state loaded 1s; round 9; root 1.247967524
+g=1.0000 generic 1.248384 (p_R 0.5000, p_S 0.5000) dedicated 1.248074 (p_R 0.5000, p_S 0.5000) gain 0.000311  [15s]
+g=0.8000 generic 1.113886 (p_R 0.5375, p_S 0.4625) dedicated 1.113599 (p_R 0.5375, p_S 0.4625) gain 0.000287  [18s]
+g=0.5000 generic 0.857572 (p_R 0.0125, p_S 0.9500) dedicated 0.857461 (p_R 0.0125, p_S 0.9500) gain 0.000111  [17s]
+EXIT 0 22:22:24

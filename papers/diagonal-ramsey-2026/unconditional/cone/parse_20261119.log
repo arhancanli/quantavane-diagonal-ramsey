@@ -1,0 +1,19 @@
+GATE PASSED load=57.97 at Thu Nov 19 15:07:14 +04 2026
+read 355 data files, 38240 defs (2 s)
+tables decoded (3 s)
+  raw 0 (3 s)
+  raw 200 (3 s)
+  raw 400 (4 s)
+  raw 600 (5 s)
+  raw 800 (10 s)
+  raw 1000 (12 s)
+  raw 1200 (16 s)
+  raw 1400 (21 s)
+  raw 1600 (26 s)
+  raw 1800 (31 s)
+pieces decoded (208 s)
+kernel theorem files consistent (209 s)
+{"raw": 1902, "closed": 1003, "sources": 2713, "controls": 918, "lines": 1128, "leaf": 9899, "route": 7284, "density": 9908, "pair": 1686, "route_calls": 304695, "route_calls_raw_child": 0, "route_calls_closed_child": 304695, "sources_all_cells_grounded": 749, "sources_with_pair_cell": 1964, "sources_one_grounded_cell": 733, "sources_one_grounded_cell_same_line_as_tails": 733, "source_cells": 1493877, "source_pair_cells": 1238773, "routes_calls_ne_cells": 0, "ctl_beta_values": ["999/1000"]}
+cross-check with zbs_bank.json: 0 mismatches []
+wrote <archive>/ramsey-unconditional/cone/zbs_full.json (223 s)
+EXIT 0

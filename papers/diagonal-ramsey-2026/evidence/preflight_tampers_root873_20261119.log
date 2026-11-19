@@ -1,0 +1,12 @@
+Thu Nov 19 17:59:19 +04 2026
+original                   ACCEPTED  (expected ACCEPT)  | PREFLIGHT OK
+jA0=0                      REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: pf_jA00.json: K6 needs 1 <= jA0 <= N - 1, got jA0 = 0, N = 1318
+jA0=-1                     REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: pf_jA0-1.json: K6 needs 1 <= jA0 <= N - 1, got jA0 = -1, N = 1318
+jA0=1318                   REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: pf_jA01318.json: K6 needs 1 <= jA0 <= N - 1, got jA0 = 1318, N = 1318
+jA0=1319                   REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: pf_jA01319.json: K6 needs 1 <= jA0 <= N - 1, got jA0 = 1319, N = 1318
+jA0 as string              REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: pf_jA0_as_string.json: jA0 must be an integer
+N=1                        REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: pf_N1.json: K4 needs N >= 2, got N = 1
+root axis x                REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: tree axis must be exactly "P" or "p", got 'x'
+root node with one child   REFUSED  (expected REFUSE)  | PREFLIGHT REFUSED: tree node is neither "L" nor [axis, child1, child2]
+ALL PREFLIGHT CONTROLS AS EXPECTED
+EXIT 0

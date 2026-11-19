@@ -1,0 +1,5 @@
+Thu Nov 19 17:58:45 +04 2026
+ok: PREFLIGHT OK
+bad_eps: PREFLIGHT REFUSED: source 0: eps = 7/1000000000000000, eta = 1/2000000000000; Theorem 5.7 proviso needs both > 8/10^15
+bad_eta: PREFLIGHT REFUSED: source 0: eps = 1/2000000000000, eta = 79/10000000000000000; Theorem 5.7 proviso needs both > 8/10^15
+EXIT 0

@@ -1,0 +1,4 @@
+Thu Nov 19 13:24:17 +04 2026
+{"checker": "A", "ok": true, "sources": 4861, "raw": 2197, "raw_pieces": 34462, "closed": 14, "controls": 1829, "controls_lemmaD": 25, "claim": "assuming Theorem A (ramsey-lemma; 25 Lemma D controls)", "z": "311946616731/250000000000", "z_float": 1.247786466924, "base_upper": "278610041/80000000", "base_upper_dec": "3.4826255125", "seconds": 1206.7}
+EXIT 0
+Thu Nov 19 13:44:24 +04 2026

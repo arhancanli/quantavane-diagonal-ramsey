@@ -1,0 +1,1 @@
+{"program": "source_B", "alpha": "1/10000000000000000", "require_tau": "1/1000000", "cells_total": 73302, "cells": [73200, 73302], "full_range": false, "ok": false, "why": "cell [95300000000000007/100000000000000000, 54936709694516262441650266123964413/57646075230342348800000000000000000] not certified", "evaluations": 61, "min_Delta_over_s": null, "argmin": null, "seconds": 0.7}

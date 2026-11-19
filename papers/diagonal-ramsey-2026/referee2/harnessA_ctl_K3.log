@@ -1,0 +1,22 @@
+loaded 3 s
+UNTAMPERED control 1722                                        ACCEPTED
+ctl: secant through the cell itself (same side)                refused  AssertionError: secant on one side of cell 256
+ctl: secant straddling the cell                                refused  AssertionError: secant on one side of cell 256
+ctl: secant through a_cut (q_0 not in D)                       refused  ArithmeticError: q not certified in D
+ctl: k -> 0 (dominance fails?)                                 refused  AssertionError: lines past k dominated
+ctl: k -> N+1                                                  refused  AssertionError: 
+ctl: k -> -1                                                   refused  AssertionError: 
+ctl: h[k] lowered 1e-12                                        ACCEPTED
+ctl: h[0] raised by 1 (hinge?)                                 refused  AssertionError: hinge bound negative
+ctl: a_cut moved into D (q0 = q1 - 1e-12)                      refused  AssertionError: G0(a_cut) >= 0
+ctl: q[0] != a_cut                                             refused  AssertionError: 
+ctl: q[N] != mu                                                refused  AssertionError: 
+ctl: two q swapped                                             refused  AssertionError: 
+ctl: beta = 1                                                  refused  AssertionError: ranges
+ctl: x = p                                                     refused  AssertionError: ranges
+ctl: lxU raised to w*l1mL                                      refused  AssertionError: lxU < w l1mL
+ctl: x raised 2e-5 relative                                    refused  AssertionError: x <= exp(lxU)
+ctl: both cert and lemmaD                                      refused  AssertionError: one certificate kind per control
+ctl: no cert at all                                            refused  KeyError: 'cert'
+ctl: sec entry negative index                                  refused  AssertionError: secant on one side of cell 256
+done 5 s

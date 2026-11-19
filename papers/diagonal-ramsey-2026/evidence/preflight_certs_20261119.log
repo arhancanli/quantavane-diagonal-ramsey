@@ -1,0 +1,9 @@
+Thu Nov 19 17:58:45 +04 2026
+pins: 31 frozen Lemma D files match MANIFEST.sha256; checkA/ivA.py == lemmaD/ivA.py
+<archive>/ramsey-zbs/certK3.json: bank certificate: 1723 controls, 0 of kind Lemma D; 4021 sources, min(eps, eta) = 1/1000000000000 > 8/10^15 (Theorem 5.7 proviso)
+<archive>/ramsey-zbs/certCD3.json: bank certificate: 1829 controls, 25 of kind Lemma D; 4861 sources, min(eps, eta) = 1/1000000000000 > 8/10^15 (Theorem 5.7 proviso)
+<archive>/ramsey-unconditional/cone/certK3-full.json: bank certificate: 2641 controls, 0 of kind Lemma D; 6734 sources, min(eps, eta) = 1/2000000000000 > 8/10^15 (Theorem 5.7 proviso)
+<archive>/ramsey-unconditional/cone/certCD3-full.json: bank certificate: 2747 controls, 25 of kind Lemma D; 7574 sources, min(eps, eta) = 1/2000000000000 > 8/10^15 (Theorem 5.7 proviso)
+PREFLIGHT OK
+EXIT 0
+Thu Nov 19 17:59:18 +04 2026

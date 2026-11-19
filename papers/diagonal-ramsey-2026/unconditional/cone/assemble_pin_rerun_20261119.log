@@ -1,0 +1,12 @@
+Thu Nov 19 18:22:53 +04 2026
+== assemble_full.py (pin added) re-run to a scratch path: each output must equal the recorded full certificate byte for byte
+EXIT 0
+certK3-full.json reproduced byte for byte: 38091eed691b3ffa954d81e9658885cb68fb30e4e46ae76ddc376444f69ee468
+MISMATCH certK3-full.map.json
+EXIT 0
+certCD3-full.json reproduced byte for byte: 32bcafd3fccbf094c83cc942669b3b843f09a3b10f87a6bd6a465d112bb07af8
+MISMATCH certCD3-full.map.json
+== C-3 controls: a zbs file other than the pinned parse must be refused
+REFUSED as required (assemble_full with zbs_bank.json as zbs_full): AssertionError: zbs_full.json is not the pinned parse
+REFUSED as required (check_full --zbs with zbs_bank.json): FULL CHECK REFUSED: zbs_full.json is not the pinned parse
+Thu Nov 19 18:24:49 +04 2026

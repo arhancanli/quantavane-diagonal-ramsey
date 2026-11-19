@@ -1,0 +1,4 @@
+# plugin state written into the working folder (ruflo hooks); never part of the paper
+.claude-flow/
+.swarm/
+__pycache__/

@@ -1,0 +1,3 @@
+Copied unchanged from our working repository research/tier2/ramsey-lemma/cert at commit 4c103f4883c54c9c285cda23211184c717e130c3
+(checkD_A.py, checkD_B.py, genD.py, tamper_D.py, ivA.py, certs/c1722_m300.json; SHA-256 in MANIFEST.sha256).
+gen_cd.py is ramsey-zbs's wrapper. Checker B and genD need python-flint 0.9.0 (pinned; checker B refuses other versions).

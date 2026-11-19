@@ -1,0 +1,5 @@
+cells 1601 passing 1599
+final run of passing cells starts at cell 2 g = 201/1000
+failures inside the run: []
+first failing cells overall: ['1/5', '401/2000']
+nice -n 10 python3 -I code/ramsey_offdiag_vs_published.py       77.77s user 0.18s system 85% cpu 1:31.30 total

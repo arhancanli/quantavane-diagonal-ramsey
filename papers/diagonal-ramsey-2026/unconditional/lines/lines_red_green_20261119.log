@@ -1,0 +1,40 @@
+Thu Nov 19 14:37:24 +04 2026
+== RED (5 thinnest line-orientations lowered by 3e-25 > twice their gap): each must FAIL
+-- program A
+PROGRAM A: 10 line-orientations checked, 5 failed; SOME LINE NOT CERTIFIED
+smallest midpoint gap 4.297e-01 (line 934, orientation 1)
+EXIT 1
+1019/1 OK
+1019/2 FAILED
+1014/1 OK
+1014/2 FAILED
+224/1 FAILED
+224/2 OK
+1059/1 OK
+1059/2 FAILED
+934/1 OK
+934/2 FAILED
+-- program B
+Hermite data C^1 on 2279 pieces; f'' < 0 certified on every piece (2279 sub-intervals), 0 s
+PROGRAM B: 10 line-orientations checked, 5 failed; SOME LINE NOT CERTIFIED
+smallest certified gap lower bound 0.42955 (line 934, orientation 1)
+EXIT 1
+1019/1 OK
+1019/2 FAILED
+1014/1 OK
+1014/2 FAILED
+224/1 FAILED
+224/2 OK
+1059/1 OK
+1059/2 FAILED
+934/1 OK
+934/2 FAILED
+== GREEN (line 1019 orientation 2 lowered by 5e-26 < its gap 1.12e-25): must PASS
+PROGRAM A: 2 line-orientations checked, 0 failed; ALL LINES CERTIFIED
+smallest midpoint gap 6.956e-26 (line 1019, orientation 2)
+EXIT 0
+Hermite data C^1 on 2279 pieces; f'' < 0 certified on every piece (2279 sub-intervals), 0 s
+PROGRAM B: 2 line-orientations checked, 0 failed; ALL LINES CERTIFIED
+smallest certified gap lower bound 6.1938e-26 (line 1019, orientation 2)
+EXIT 0
+Thu Nov 19 14:37:30 +04 2026

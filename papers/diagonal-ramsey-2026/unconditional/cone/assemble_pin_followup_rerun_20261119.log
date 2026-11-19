@@ -1,0 +1,9 @@
+Thu Nov 19 18:25:39 +04 2026
+== assemble_full.py (with the pin) re-run to a scratch path; certificate byte for byte, map equal apart from "out" and "seconds"
+EXIT 0
+certK3-full.json identical to the recorded certificate
+certK3 map: 16 keys; differing keys ['out', 'seconds']; EQUAL apart from out and seconds
+EXIT 0
+certCD3-full.json identical to the recorded certificate
+certCD3 map: 16 keys; differing keys ['out', 'seconds']; EQUAL apart from out and seconds
+Thu Nov 19 18:27:11 +04 2026

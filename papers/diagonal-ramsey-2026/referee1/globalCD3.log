@@ -1,0 +1,7 @@
+controls done 4s
+raw done 70s
+closed done 129s
+sources done 171s
+counts: {"ctl ranges": 1829, "ctl x<(1-mu)^w via lxU,l1mL": 1829, "ctl exactly one kind": 1829, "raw p": 2197, "raw knots": 2197, "raw min": 2197, "raw cover": 2197, "piece bp lo..hi": 34462, "piece margin>0": 34462, "piece bp has L_P knots": 34462, "term 0<xi<x": 34462, "term xi<e^-A_s": 34462, "term 0<nu<mu": 34462, "term ys>0": 34462, "term e^-aU<=xi": 34462, "term e^-bU<=nu": 34462, "route p_g<p_P": 18496, "route us": 18496, "route calls count": 18496, "route bp has us knots": 18496, "call child dom": 145004, "call z": 145004, "call bp a..b + child knots": 145004, "call L_c<=psi-hm": 145004, "route psi ineq": 18496, "route terminal ineq": 18496, "leaf p_g<=p_P": 15966, "leaf ineq": 15966, "closed p": 14, "closed knots": 14, "closed min": 14, "closed cover": 14, "closed R raw": 49687, "closed bp": 49687, "closed dom R": 49687, "closed bp knots": 49687, "closed L_R<=L_Q": 49687, "pair S raw": 49687, "pair dens": 49687, "pair dom S": 49687, "pair bp recip": 49687, "pair ineq": 49687, "src basic": 4861, "src left tail": 4861, "src right tail": 4861, "src cells cover": 4861, "grounded": 25898, "srcpair dens": 4771, "srcpair dom": 4771, "srcpair bp": 4771, "srcpair ineq": 4771}
+min slacks: {'call': 1e-13, 'route_psi': 1.0125e-13, 'route_term': 1.0000076304509514e-13, 'leaf': 1.0000853398099413e-13, 'srcpair': 0.0}
+TOTAL FAILS 0 []

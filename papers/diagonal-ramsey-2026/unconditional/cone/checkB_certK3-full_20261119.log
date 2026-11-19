@@ -1,0 +1,5 @@
+Thu Nov 19 15:19:55 +04 2026
+{"checker": "B", "ok": true, "controls_lemmaD": 0, "claim": "ZBS-only", "controls": 2641, "sources": 6734, "raw": 3295, "closed": 1011, "z": "1248056263241/1000000000000", "z_float": 1.248056263241, "base_upper": "[3.4835652387383337785723102939790104416456740757030166519573727411845338544316320722769334386053 +/- 4.17e-95]", "seconds": 167.2}
+zsh run_cone.sh checkB certK3  158.74s user 1.52s system 95% cpu 2:48.21 total
+Thu Nov 19 15:22:43 +04 2026
+EXIT 0

@@ -1,0 +1,7 @@
+Thu Nov 19 15:16:46 +04 2026
+pins: 31 frozen Lemma D files match MANIFEST.sha256; checkA/ivA.py == lemmaD/ivA.py
+<archive>/ramsey-unconditional/cone/certK3-full.json: bank certificate: 2641 controls, 0 of kind Lemma D
+<archive>/ramsey-unconditional/cone/certCD3-full.json: bank certificate: 2747 controls, 25 of kind Lemma D
+PREFLIGHT OK
+zsh run_cone.sh preflight  24.65s user 0.95s system 92% cpu 27.588 total
+EXIT 0

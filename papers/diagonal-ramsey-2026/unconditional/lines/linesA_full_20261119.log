@@ -1,0 +1,28 @@
+Thu Nov 19 14:31:45 +04 2026
+14:31  up 3 days, 14:59, 5 users, load averages: 49.14 70.73 68.32
+line 49 done, 18 s
+line 99 done, 34 s
+line 149 done, 49 s
+line 199 done, 62 s
+line 249 done, 75 s
+line 299 done, 87 s
+line 349 done, 100 s
+line 399 done, 113 s
+line 449 done, 126 s
+line 499 done, 139 s
+line 549 done, 151 s
+line 599 done, 163 s
+line 649 done, 173 s
+line 699 done, 185 s
+line 749 done, 197 s
+line 799 done, 210 s
+line 849 done, 223 s
+line 899 done, 236 s
+line 949 done, 250 s
+line 999 done, 266 s
+line 1049 done, 284 s
+line 1099 done, 301 s
+PROGRAM A: 2256 line-orientations checked, 0 failed; ALL LINES CERTIFIED
+smallest midpoint gap 1.131e-25 (line 1014, orientation 2)
+EXIT 0
+Thu Nov 19 14:36:54 +04 2026

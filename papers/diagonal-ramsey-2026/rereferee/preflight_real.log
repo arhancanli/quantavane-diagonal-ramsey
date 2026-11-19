@@ -1,0 +1,7 @@
+pins: 31 frozen Lemma D files match MANIFEST.sha256; checkA/ivA.py == lemmaD/ivA.py
+<archive>/ramsey-zbs/certCD3.json: bank certificate: 1829 controls, 25 of kind Lemma D
+research/tier2/ramsey-zbs/code/lemmaD/certs/root3_x337059333092731.json: Lemma D certificate: N = 1318, jA0 = 394, 67 leaves
+PREFLIGHT OK
+real 3.15
+user 2.51
+sys 0.14

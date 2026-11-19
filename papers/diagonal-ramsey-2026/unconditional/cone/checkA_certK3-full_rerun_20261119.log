@@ -1,0 +1,5 @@
+Thu Nov 19 18:27:19 +04 2026
+18:27  up 3 days, 18:55, 5 users, load averages: 37.01 25.37 22.61
+{"checker": "A", "ok": true, "sources": 6734, "raw": 3295, "raw_pieces": 44802, "closed": 1011, "controls": 2641, "controls_lemmaD": 0, "claim": "ZBS-only", "z": "1248056263241/1000000000000", "z_float": 1.248056263241, "base_upper": "8708913097/2500000000", "base_upper_dec": "3.4835652388", "seconds": 1514.9}
+EXIT 0
+Thu Nov 19 18:52:35 +04 2026

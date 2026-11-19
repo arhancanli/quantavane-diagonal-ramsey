@@ -1,0 +1,27 @@
+Thu Nov 19 18:27:56 +04 2026
+== RED (5 thinnest line-orientations lowered by 3e-25 > twice their gap): exactly these 5 must FAIL
+-- program A
+PROGRAM A: 10 line-orientations checked, 5 failed; SOME LINE NOT CERTIFIED
+smallest midpoint gap 4.297e-01 (line 934, orientation 1)
+EXIT 1
+-- program B
+Hermite data C^1 on 2279 pieces; f'' < 0 certified on every piece (2279 sub-intervals), 0 s
+PROGRAM B: 10 line-orientations checked, 5 failed; SOME LINE NOT CERTIFIED
+smallest certified gap lower bound 0.42955 (line 934, orientation 1)
+EXIT 1
+== GREEN (line 1019 orientation 2 lowered by 5e-26 < its gap 1.12e-25): must PASS
+-- program A
+PROGRAM A: 2 line-orientations checked, 0 failed; ALL LINES CERTIFIED
+smallest midpoint gap 6.956e-26 (line 1019, orientation 2)
+EXIT 0
+-- program B
+Hermite data C^1 on 2279 pieces; f'' < 0 certified on every piece (2279 sub-intervals), 0 s
+PROGRAM B: 2 line-orientations checked, 0 failed; ALL LINES CERTIFIED
+smallest certified gap lower bound 6.1938e-26 (line 1019, orientation 2)
+EXIT 0
+== OPTION CONTROLS (audit L-1, L-2): malformed or unknown options must be refused
+REFUSED as required (lines_B tamper without =): refusing malformed option '--tamper' (use --key=value)
+REFUSED as required (lines_B unknown key): refusing unknown option '--line' (known: --lines, --tamper)
+REFUSED as required (lines_A tamper without =): refusing malformed option '--tamper' (use --key=value)
+REFUSED as required (lines_A unknown key): refusing unknown option '--tamperr' (known: --lines, --tamper)
+Thu Nov 19 18:28:01 +04 2026

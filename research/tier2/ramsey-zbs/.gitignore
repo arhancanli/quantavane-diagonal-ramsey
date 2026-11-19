@@ -1,0 +1,6 @@
+__pycache__/
+*.npz
+*.pyc
+.claude-flow/
+.swarm/
+runs/*.json

@@ -1,0 +1,381 @@
+# RUNS_C.log: checkD_C outputs, 18 Nov 2026 (UTC times in [gate] lines). Checker at commit 0548347a0.
+# All runs under nice 10, started only when the 1-min load was < 60.
+
+######## 1. self-test, four certificates (right-end tangents = default), midpoint comparison, sanity_C
+[gate] start 10:08:35 load=52
+# checkD_C final run, checker at commit 0548347a0, system python:
+Python 3.9.6
+selftest: PASS
+== research/tier2/ramsey-lemma/cert/certs/c1722_m300.json  (heights: right)
+  K1 ok
+  K2 ok  G0(a_cut) in IV[2.45395e-12, 2.45395e-12], G0(a_hi) in IV[-2.45302e-12, -2.45302e-12], G0'(a_hi) in IV[-1.22674e+0, -1.22674e+0]
+  K3 ok
+  K4 ok  (N = 1318)
+  K5 heights computed (right tangents)
+  K6 ok  max |Ht''| over cells >= jA0 <= 6.98568e+1
+  K7 ok  Ht'(mu) in IV[-3.10575e-1, -3.10575e-1]
+  K8 ok  phi_s(u_b) in IV[1.15266e+0, 1.15266e+0]
+  K9 ok
+  K10: 97 leaves (22 infeasible by step 0), 0 failing
+  worst leaf P2p2P2p2P1p2P2p1P1p1: P[3.930543235e-2, 4.081717975e-2] p[1.353481538e+0, 1.418243785e+0], U(B) <= -1.3330992e-7
+  RESULT ACCEPT  leaves=97  worst U(B) <= -1.3330992e-7
+  worst U(B) exact upper bound = -166915366141657793919458405399024026967838347048522794355178509355076208410187751313610543637335411093375481272724387055050376748206891654581423987075767030420237869523766139293786235987087999661095088323212479503272148702028747832461226811859975348025523093269026649560823291861325779048120750588619350036560384611188274241594321133714047680785887082474842386443005820948281458775212679204148042820442455645801521394771916154106370191294937/1252085032094339978576779578538679286706647371056986087859283694856349820518519753154718173886427305913596023141852306623858420261327517806085976483606362742476532163384623344597474346915493731931191766971099718477335415864463350945908465923590824586382366872952273819099135823173325015634555233500969264789615250326228359999080136485930681083392695347317173151527744572476689142432644147097632768000000000000000000000000000000000000000000000000000
+== research/tier2/ramsey-lemma/cert/certs/c1722_m280.json  (heights: right)
+  K1 ok
+  K2 ok  G0(a_cut) in IV[2.45317e-12, 2.45317e-12], G0(a_hi) in IV[-2.45375e-12, -2.45375e-12], G0'(a_hi) in IV[-1.22673e+0, -1.22673e+0]
+  K3 ok
+  K4 ok  (N = 1318)
+  K5 heights computed (right tangents)
+  K6 ok  max |Ht''| over cells >= jA0 <= 6.98721e+1
+  K7 ok  Ht'(mu) in IV[-3.10530e-1, -3.10530e-1]
+  K8 ok  phi_s(u_b) in IV[1.15266e+0, 1.15266e+0]
+  K9 ok
+  K10: 97 leaves (25 infeasible by step 0), 0 failing
+  worst leaf P2p2P2p1P2p1P1: P[4.232892715e-2, 4.535242194e-2] p[5.763345770e-1, 8.353835642e-1], U(B) <= -7.6280184e-7
+  RESULT ACCEPT  leaves=97  worst U(B) <= -7.6280184e-7
+  worst U(B) exact upper bound = -825740278293982981741730676873950050853085700220769556452666958041024502375653746661429805783559303317521144891081393396466126500591576074168593168501665116669769654653306247908874448253782330013385939637835866175123749721189921568364855705674618760528847892754241821890924937256498456097955090461418336033/1082509539668796373667655584841293086079195044604634368339812786293070925080369538523487384652595608642781832723332230775699048073519372827753702291990077019659274449281935236814856047359036144215851411536700713693028581317716196118039383498845684093008364376545802757288755200000000000000000000000000000000000000
+== research/tier2/ramsey-lemma/cert/certs/c1701_m280.json  (heights: right)
+  K1 ok
+  K2 ok  G0(a_cut) in IV[2.41856e-12, 2.41856e-12], G0(a_hi) in IV[-2.41816e-12, -2.41816e-12], G0'(a_hi) in IV[-1.20918e+0, -1.20918e+0]
+  K3 ok
+  K4 ok  (N = 1318)
+  K5 heights computed (right tangents)
+  K6 ok  max |Ht''| over cells >= jA0 <= 6.86256e+1
+  K7 ok  Ht'(mu) in IV[-3.10950e-1, -3.10950e-1]
+  K8 ok  phi_s(u_b) in IV[1.16037e+0, 1.16037e+0]
+  K9 ok
+  K10: 72 leaves (18 infeasible by step 0), 0 failing
+  worst leaf P2p2P1p1P2p2: P[3.043718766e-2, 3.652462519e-2] p[8.409713934e-1, 1.101753143e+0], U(B) <= -1.0250667e-6
+  RESULT ACCEPT  leaves=72  worst U(B) <= -1.0250667e-6
+  worst U(B) exact upper bound = -147011054073759047826453074523785756250756128915142747778498779544008251093764659488239538037650022129434605041852891057912193040547734484456903580814611944461445234817448456459462468151628144760827900836329981105659177769398666623865870309251297008736544917647641162291952762233985918065538993616981462911/143416072122456817540599978393193290582618557518640577274667718342958625654804359826700739302977537438265558670446555203502885171797640993981543214131244838115808525153800593909573244205088717159540771281560786177557870468601656208292551722917381431981449816619703544661934080000000000000000000000000000000000000
+== research/tier2/ramsey-lemma/cert/certs/certUroot_m250.json  (heights: right)
+  K1 ok
+  K2 ok  G0(a_cut) in IV[2.47887e-12, 2.47887e-12], G0(a_hi) in IV[-2.47912e-12, -2.47912e-12], G0'(a_hi) in IV[-1.23950e+0, -1.23950e+0]
+  K3 ok
+  K4 ok  (N = 1350)
+  K5 heights computed (right tangents)
+  K6 ok  max |Ht''| over cells >= jA0 <= 2.79769e+2
+  K7 ok  Ht'(mu) in IV[-3.25484e-1, -3.25484e-1]
+  K8 ok  phi_s(u_b) in IV[1.20614e+0, 1.20614e+0]
+  K9 ok
+  K10: 53 leaves (12 infeasible by step 0), 0 failing
+  worst leaf P2p2P2p1P1p1: P[3.796519106e-2, 4.429272291e-2] p[6.030728739e-1, 8.741401036e-1], U(B) <= -9.1169023e-6
+  RESULT ACCEPT  leaves=53  worst U(B) <= -9.1169023e-6
+  worst U(B) exact upper bound = -108171244950107861335691745147264543218954639055796869646639189642611119060185732619441519149662464134285140924745643182108701439520748011629580687682191928358709656561741958310774159255349053306597784658853585813189380583149705877618931419975707829952529876485284177843202392519655353398770709403557/11864912059932458162619916120287130917956934701716493717297884871782020747966397537109470551541300883833390745799930867075439955180760328655362865794581337727931169787803148211364303855418607249508764708075808882941401072829717274093360740147841146295435448002346661416271872000000000000000000000000000000
+EXIT_RIGHT 0
+# comparison only: midpoint tangents (cell 0 right-end)
+== research/tier2/ramsey-lemma/cert/certs/c1722_m300.json  (heights: mid)
+  RESULT ACCEPT  leaves=97  worst U(B) <= -2.3232476e-7
+== research/tier2/ramsey-lemma/cert/certs/c1722_m280.json  (heights: mid)
+  RESULT ACCEPT  leaves=97  worst U(B) <= -8.6183785e-7
+== research/tier2/ramsey-lemma/cert/certs/c1701_m280.json  (heights: mid)
+  RESULT ACCEPT  leaves=72  worst U(B) <= -1.1276509e-6
+== research/tier2/ramsey-lemma/cert/certs/certUroot_m250.json  (heights: mid)
+  RESULT ACCEPT  leaves=53  worst U(B) <= -9.2194667e-6
+EXIT_MID 0
+# sanity_C on c1722_m300
+data checks True
+7. branch census at nodes: {'bind': 1318, 'free': 0, 'both': 0}
+1. y=-4.598e-1  Hhat+=1.652435952e-1  max sampled=1.652435952e-1  gap=5.657e-49 OK
+1. y=-3.105e-1  Hhat+=1.051217048e-1  max sampled=1.051217048e-1  gap=1.982e-16 OK
+1. y=-1.000e-1  Hhat+=2.564914049e-2  max sampled=2.564907386e-2  gap=6.663e-8 OK
+1. y=0          Hhat+=-9.334017502e-3  max sampled=-9.334102840e-3  gap=8.533e-8 OK
+1. y=5.000e-1   Hhat+=-1.700723330e-1  max sampled=-1.700723756e-1  gap=4.262e-8 OK
+1. y=1.000e+0   Hhat+=-3.181484772e-1  max sampled=-3.181485531e-1  gap=7.595e-8 OK
+1. y=1.150e+0   Hhat+=-3.611539464e-1  max sampled=-3.611540260e-1  gap=7.962e-8 OK
+1. y=1.400e+0   Hhat+=-4.317848850e-1  max sampled=-4.317849982e-1  gap=1.132e-7 OK
+1. y=1.600e+0   Hhat+=-4.875065606e-1  max sampled=-4.875067096e-1  gap=1.490e-7 OK
+2. Psi+ dominance checked for 4 values of j0
+3. max d2 bound 6.985689295e+1 vs max sampled |Ht''| 6.985620656e+1 (ratio - 1 = 9.825e-6)
+4. max |H' (jets) - difference quotient| = 5.175e-39
+5. IRs telescoped 1.4842004164036e-2, piece sum 1.4842004164036e-2, diff -6.08e-75
+5. midpoint rule (n=4000) 1.484201442e-2, diff -1.02e-8
+6. cell 1: concavity not certified after subdivision
+6. cells 1..N-1 with Ht'' < 0 certified: 1316 of 1317 (max upper bound of Ht'' -3.31118e+0)
+sanity_C: PASS
+[gate] exit 0 10:09:10
+
+######## 2. tamper_C (own minimal tampers + positive controls + mesh sweep) on c1722_m300
+[gate] start 10:03:28 load=45
+base c1722_m300.json: ACCEPT, worst U <= -1.33309e-7
+x_eq_p               REFUSED K1: x < p broken (x = p)
+                       first failure: K1: 0 < x < p
+a_cut_past_a0        REFUSED K2: G0(a_cut) >= 0 broken (a_cut = a(0) + <3.08148e-45)
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-1.27048e-45, -1.27048e-45])
+a_hi_before_a0       REFUSED K2: G0(a_hi) < 0 broken (a_hi = a(0) - <3.08148e-45)
+                       first failure: K2: G0(a_hi) < 0 (enclosure IV[2.50970e-45, 2.50970e-45])
+alpha_below          REFUSED K2: alpha >= beta/|G0'(a_hi)| broken by 1e-30
+                       first failure: K2: alpha >= beta/|G0'(a_hi)| (alpha = 8.15165810490e-1, bound 8.15165810490e-1)
+x_up                 REFUSED K2: control x raised by 2.12199e-12 (G0(a_cut) turns negative)
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-2.45395e-12, -2.45395e-12])
+p_down               REFUSED K2: control p lowered by 2.45394e-12 (G0(a_cut) turns negative)
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-2.45395e-12, -2.45395e-12])
+beta_up              REFUSED K2: control beta raised by 2.96937e-11 (G0(a_hi) turns >= 0)
+                       first failure: K2: G0(a_hi) < 0 (enclosure IV[2.45302e-12, 2.45302e-12])
+Dplus_nonint         REFUSED K3: (1-u_b)/Dplus not an integer (Dplus + 1e-30)
+                       first failure: K3: (1 - u_b)/Dplus a positive integer (got 970000000000000000000000000000/970000000000000000000001)
+u_b_shift            REFUSED K3: (1-u_b)/Dplus not an integer (u_b + 1e-30)
+                       first failure: K3: (1 - u_b)/Dplus a positive integer (got 969999999999999999999999999999/970000000000000000000000)
+q1_below_a_hi        REFUSED K4: q_1 >= a_hi broken by 1e-30
+                       first failure: K4: q_1 >= a_hi
+qN_ne_mu             REFUSED K4: q_N = mu broken by 1e-30
+                       first failure: K4: q_N = mu
+q_unsorted           REFUSED K4: q not increasing (q_5, q_6 swapped)
+                       first failure: K4: q strictly increasing
+jA0_zero             REFUSED K6: jA0 = 0
+                       first failure: K6: 1 <= jA0 <= N - 1
+jA0_N                REFUSED K6: jA0 = N
+                       first failure: K6: 1 <= jA0 <= N - 1
+jA0_above_minjA      REFUSED K10 step 5: jA0 = (least jA over boxes) + 1 = 510
+                       first failure: K10: leaf P2p2P1p2P2p1P1p1P2p1 box P[3.17466e-2, 3.32584e-2] p[1.09443e+0, 1.15919e+0]: fail: jA undefined or < jA0
+y_c_below_Htp_mu     REFUSED K7: y_c >= Ht'(mu) broken by 1e-30
+                       first failure: K7: y_c >= Ht'(mu) (y_c = -3.10575817074e-1, Ht'(mu) <= -3.10575817074e-1)
+y_c_eq_minus_w       REFUSED K7: y_c > -w broken (y_c = -w)
+                       first failure: K7: y_c > -w
+y_c_above_phis       REFUSED K8: phi_s(u_b) >= y_c broken by 1e-30
+                       first failure: K8: phi_s(u_b) >= y_c
+G_up_below_g         REFUSED K9: G_up >= g(u_b) broken by 1e-30
+                       first failure: K9: G_up >= g(u_b) (g(u_b) in IV[4.83759e-2, 4.83759e-2])
+P_up_below           REFUSED K9: P_up >= -w log u_b broken by 1e-30
+                       first failure: K9: P_up >= -w log u_b (in IV[1.61253e+0, 1.61253e+0])
+w_up                 REFUSED K9 (and others): control w raised by 1.90080e-8 so g(u_b) > G_up
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-6.31578e-9, -6.31578e-9])
+tree_root_leaf       REFUSED K10: whole rectangle as one leaf
+                       first failure: K10: leaf root box P[0, 4.83759e-2] p[-4.59861e-1, 1.61253e+0]: ok, U(B) <= 2.46505e-3
+tree_merge_worst     REFUSED K10: worst leaf P2p2P2p2P1p2P2p1P1p1 merged with its sibling
+                       first failure: K10: leaf P2p2P2p2P1p2P2p1P1 box P[3.93054e-2, 4.08171e-2] p[1.35348e+0, 1.48300e+0]: ok, U(B) <= 9.12216e-6
+fmt_float            REFUSED format: a rational given as a JSON number
+                       first failure: format: JSON number '0.8': rationals must be strings
+fmt_axis             REFUSED format: tree axis "X"
+                       first failure: format: tree: bad node ['X']
+fmt_zero_den         REFUSED format: denominator 0
+                       first failure: format: y_c: malformed denominator '1/0'
+fmt_missing          REFUSED format: field tree missing
+                       first failure: format: missing field tree
+tamper_C: 27 / 27 refused
+ctrl_split_all_leaves ACCEPTED leaves=194 worst U <= -1.33309e-7
+ctrl_D_half          ACCEPTED leaves=97 worst U <= -1.53477e-7
+ctrl_a_cut_lower     ACCEPTED leaves=97 worst U <= -1.33309e-7
+controls: 3 / 3 accepted
+sweep D x 2   ACCEPTED worst U <= -9.29751e-8
+sweep D x 4   ACCEPTED worst U <= -1.23055e-8
+sweep D x 8   REFUSED  worst U <= 1.49033e-7
+sweep D x 16  REFUSED  worst U <= 4.71711e-7
+EXIT 0
+[gate] exit 0 10:04:23
+
+######## 3. tamper_C on certUroot_m250 (tampers only; controls added later)
+base certUroot_m250.json: ACCEPT, worst U <= -9.11690e-6
+x_eq_p               REFUSED K1: x < p broken (x = p)
+                       first failure: K1: 0 < x < p
+a_cut_past_a0        REFUSED K2: G0(a_cut) >= 0 broken (a_cut = a(0) + <3.08148e-45)
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-3.69618e-45, -3.69618e-45])
+a_hi_before_a0       REFUSED K2: G0(a_hi) < 0 broken (a_hi = a(0) - <3.08148e-45)
+                       first failure: K2: G0(a_hi) < 0 (enclosure IV[1.23321e-46, 1.23321e-46])
+alpha_below          REFUSED K2: alpha >= beta/|G0'(a_hi)| broken by 1e-30
+                       first failure: K2: alpha >= beta/|G0'(a_hi)| (alpha = 8.06776028235e-1, bound 8.06776028235e-1)
+x_up                 REFUSED K2: control x raised by 2.12074e-12 (G0(a_cut) turns negative)
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-2.47887e-12, -2.47887e-12])
+p_down               REFUSED K2: control p lowered by 2.47887e-12 (G0(a_cut) turns negative)
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-2.47887e-12, -2.47887e-12])
+beta_up              REFUSED K2: control beta raised by 2.95971e-11 (G0(a_hi) turns >= 0)
+                       first failure: K2: G0(a_hi) < 0 (enclosure IV[2.47912e-12, 2.47912e-12])
+Dplus_nonint         REFUSED K3: (1-u_b)/Dplus not an integer (Dplus + 1e-30)
+                       first failure: K3: (1 - u_b)/Dplus a positive integer (got 970000000000000000000000000000/970000000000000000000001)
+u_b_shift            REFUSED K3: (1-u_b)/Dplus not an integer (u_b + 1e-30)
+                       first failure: K3: (1 - u_b)/Dplus a positive integer (got 969999999999999999999999999999/970000000000000000000000)
+q1_below_a_hi        REFUSED K4: q_1 >= a_hi broken by 1e-30
+                       first failure: K4: q_1 >= a_hi
+qN_ne_mu             REFUSED K4: q_N = mu broken by 1e-30
+                       first failure: K4: q_N = mu
+q_unsorted           REFUSED K4: q not increasing (q_5, q_6 swapped)
+                       first failure: K4: q strictly increasing
+jA0_zero             REFUSED K6: jA0 = 0
+                       first failure: K6: 1 <= jA0 <= N - 1
+jA0_N                REFUSED K6: jA0 = N
+                       first failure: K6: 1 <= jA0 <= N - 1
+jA0_above_minjA      REFUSED K10 step 5: jA0 = (least jA over boxes) + 1 = 528
+                       first failure: K10: leaf P2p2P1p2P2p1P1p1 box P[3.16376e-2, 3.48014e-2] p[1.14520e+0, 1.28074e+0]: fail: jA undefined or < jA0
+y_c_below_Htp_mu     REFUSED K7: y_c >= Ht'(mu) broken by 1e-30
+                       first failure: K7: y_c >= Ht'(mu) (y_c = -3.25484304531e-1, Ht'(mu) <= -3.25484304531e-1)
+y_c_eq_minus_w       REFUSED K7: y_c > -w broken (y_c = -w)
+                       first failure: K7: y_c > -w
+y_c_above_phis       REFUSED K8: phi_s(u_b) >= y_c broken by 1e-30
+                       first failure: K8: phi_s(u_b) >= y_c
+G_up_below_g         REFUSED K9: G_up >= g(u_b) broken by 1e-30
+                       first failure: K9: G_up >= g(u_b) (g(u_b) in IV[5.06202e-2, 5.06202e-2])
+P_up_below           REFUSED K9: P_up >= -w log u_b broken by 1e-30
+                       first failure: K9: P_up >= -w log u_b (in IV[1.68734e+0, 1.68734e+0])
+w_up                 REFUSED K9 (and others): control w raised by 1.90203e-8 so g(u_b) > G_up
+                       first failure: K2: G0(a_cut) >= 0 (enclosure IV[-6.34540e-9, -6.34540e-9])
+tree_root_leaf       REFUSED K10: whole rectangle as one leaf
+                       first failure: K10: leaf root box P[0, 5.06202e-2] p[-4.81196e-1, 1.68734e+0]: ok, U(B) <= 2.51740e-3
+tree_merge_worst     REFUSED K10: worst leaf P2p2P2p1P1p1 merged with its sibling
+                       first failure: K10: leaf P2p2P2p1P1 box P[3.79651e-2, 4.42927e-2] p[6.03072e-1, 1.14520e+0]: ok, U(B) <= 4.62362e-5
+fmt_float            REFUSED format: a rational given as a JSON number
+                       first failure: format: JSON number '0.8': rationals must be strings
+fmt_axis             REFUSED format: tree axis "X"
+                       first failure: format: tree: bad node ['X']
+fmt_zero_den         REFUSED format: denominator 0
+                       first failure: format: y_c: malformed denominator '1/0'
+fmt_missing          REFUSED format: field tree missing
+                       first failure: format: missing field tree
+tamper_C: 27 / 27 refused
+EXIT 0
+[gate] exit 0 09:56:20
+
+######## 4. cert/tamper_D.py tampers through checkD_C only (run_tamper_D_C.py, venv python 3.12 for genD's flint)
+[gate] start 09:58:01 load=43
+#### c1722_m300
+control x * 1.01                         C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-7.57853e-3, -7.57853e-3])  (tD_01.json)
+control mu + 1e-9                        C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.69723e-10, -2.69723e-10])  (tD_02.json)
+alpha / 2                                C refused
+    C: K2: alpha >= beta/|G0'(a_hi)| (alpha = 4.07582905245e-1, bound 8.15165810490e-1)  (tD_03.json)
+w -> 3 (so (1-mu)^w < x < p)             C refused
+    C: K1: x < (1 - mu)^w  (x = 3.29303e-1, (1-mu)^w >= 2.13064e-1)  (tD_04.json)
+a_cut above a(0) (inside D)              C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.33034e-12, -2.33034e-12])  (tD_05.json)
+y_c - 1e-3                               C refused
+    C: K7: y_c >= Ht'(mu) (y_c = -3.11575817074e-1, Ht'(mu) <= -3.10575817074e-1)  (tD_06.json)
+u_b -> u_b * 2/3                         C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 98000000/97)  (tD_07.json)
+D not dividing 1-u_b                     C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 2000000/3)  (tD_08.json)
+G_up below g(u_b)                        C refused
+    C: K9: G_up >= g(u_b) (g(u_b) in IV[4.83759e-2, 4.83759e-2])  (tD_09.json)
+jA0 -> last node (no slope data)         C refused
+    C: K6: 1 <= jA0 <= N - 1  (tD_10.json)
+tree -> single leaf                      C refused
+    C: K10: leaf root box P[0, 4.83759e-2] p[-4.59861e-1, 1.61253e+0]: ok, U(B) <= 2.46505e-3 [worst U <= 2.46505e-3]  (tD_11.json)
+q_1 below a_hi                           C refused
+    C: K4: q_1 >= a_hi  (tD_12.json)
+semantic: data regenerated at x e^{+2e-6}, same tree C refused
+    C: K10: leaf P2p2P2p1P1p2P2 box P[3.93054e-2, 4.23289e-2] p[8.35383e-1, 1.09443e+0]: ok, U(B) <= 8.68857e-7 [worst U <= 8.92062e-7]  (tD_13.json)
+semantic: data regenerated at x e^{+1e-5}, same tree C refused
+    C: K10: leaf P2p1P2p2P2p2 box P[4.23289e-2, 4.83759e-2] p[3.17285e-1, 5.76334e-1]: ok, U(B) <= 3.49962e-6 [worst U <= 4.99351e-6]  (tD_14.json)
+merge the worst leaf with its sibling    C refused
+    C: K10: leaf P2p2P2p2P1p2P2p1P1 box P[3.93054e-2, 4.08171e-2] p[1.35348e+0, 1.48300e+0]: ok, U(B) <= 9.12216e-6 [worst U <= 9.12216e-6]  (tD_15.json)
+ALL 15 TAMPERS REFUSED BY BOTH
+checkD_C on tamper_D: 15 / 15 refused
+EXIT 0
+#### c1722_m280
+control x * 1.01                         C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-7.57840e-3, -7.57840e-3])  (tD_01.json)
+control mu + 1e-9                        C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.69738e-10, -2.69738e-10])  (tD_02.json)
+alpha / 2                                C refused
+    C: K2: alpha >= beta/|G0'(a_hi)| (alpha = 4.07586710301e-1, bound 8.15173420602e-1)  (tD_03.json)
+w -> 3 (so (1-mu)^w < x < p)             C refused
+    C: K1: x < (1 - mu)^w  (x = 3.29297e-1, (1-mu)^w >= 2.13064e-1)  (tD_04.json)
+a_cut above a(0) (inside D)              C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.33108e-12, -2.33108e-12])  (tD_05.json)
+y_c - 1e-3                               C refused
+    C: K7: y_c >= Ht'(mu) (y_c = -3.11530719257e-1, Ht'(mu) <= -3.10530719257e-1)  (tD_06.json)
+u_b -> u_b * 2/3                         C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 98000000/97)  (tD_07.json)
+D not dividing 1-u_b                     C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 2000000/3)  (tD_08.json)
+G_up below g(u_b)                        C refused
+    C: K9: G_up >= g(u_b) (g(u_b) in IV[4.83759e-2, 4.83759e-2])  (tD_09.json)
+jA0 -> last node (no slope data)         C refused
+    C: K6: 1 <= jA0 <= N - 1  (tD_10.json)
+tree -> single leaf                      C refused
+    C: K10: leaf root box P[0, 4.83759e-2] p[-4.59861e-1, 1.61253e+0]: ok, U(B) <= 2.45068e-3 [worst U <= 2.45068e-3]  (tD_11.json)
+q_1 below a_hi                           C refused
+    C: K4: q_1 >= a_hi  (tD_12.json)
+semantic: data regenerated at x e^{+2e-6}, same tree C refused
+    C: K10: leaf P2p2P2p1P2p1P1 box P[4.23289e-2, 4.53524e-2] p[5.76334e-1, 8.35383e-1]: ok, U(B) <= 2.62731e-7 [worst U <= 2.62731e-7]  (tD_13.json)
+semantic: data regenerated at x e^{+1e-5}, same tree C refused
+    C: K10: leaf P2p1P2p2P1 box P[3.62819e-2, 4.23289e-2] p[5.82366e-2, 5.76334e-1]: ok, U(B) <= 2.59080e-6 [worst U <= 4.36482e-6]  (tD_14.json)
+merge the worst leaf with its sibling    C refused
+    C: K10: leaf P2p2P2p1P2p1 box P[4.23289e-2, 4.83759e-2] p[5.76334e-1, 8.35383e-1]: ok, U(B) <= 4.75072e-5 [worst U <= 4.75072e-5]  (tD_15.json)
+ALL 15 TAMPERS REFUSED BY BOTH
+checkD_C on tamper_D: 15 / 15 refused
+EXIT 0
+#### c1701_m280
+control x * 1.01                         C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-7.44578e-3, -7.44578e-3])  (tD_01.json)
+control mu + 1e-9                        C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.75411e-10, -2.75411e-10])  (tD_02.json)
+alpha / 2                                C refused
+    C: K2: alpha >= beta/|G0'(a_hi)| (alpha = 4.13503002204e-1, bound 8.27006004407e-1)  (tD_03.json)
+w -> 3 (so (1-mu)^w < x < p)             C refused
+    C: K1: x < (1 - mu)^w  (x = 3.30534e-1, (1-mu)^w >= 1.95712e-1)  (tD_04.json)
+a_cut above a(0) (inside D)              C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.29724e-12, -2.29724e-12])  (tD_05.json)
+y_c - 1e-3                               C refused
+    C: K7: y_c >= Ht'(mu) (y_c = -3.11950541040e-1, Ht'(mu) <= -3.10950541040e-1)  (tD_06.json)
+u_b -> u_b * 2/3                         C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 98000000/97)  (tD_07.json)
+D not dividing 1-u_b                     C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 2000000/3)  (tD_08.json)
+G_up below g(u_b)                        C refused
+    C: K9: G_up >= g(u_b) (g(u_b) in IV[4.86994e-2, 4.86994e-2])  (tD_09.json)
+jA0 -> last node (no slope data)         C refused
+    C: K6: 1 <= jA0 <= N - 1  (tD_10.json)
+tree -> single leaf                      C refused
+    C: K10: leaf root box P[0, 4.86995e-2] p[-4.62937e-1, 1.62331e+0]: ok, U(B) <= 2.54255e-3 [worst U <= 2.54255e-3]  (tD_11.json)
+q_1 below a_hi                           C refused
+    C: K4: q_1 >= a_hi  (tD_12.json)
+semantic: data regenerated at x e^{+2e-6}, same tree C ACCEPTED
+    C: ACCEPTED, worst U <= -1.16129e-8  (tD_13.json)
+semantic: data regenerated at x e^{+1e-5}, same tree C refused
+    C: K10: leaf P2p1P2p2P1 box P[3.65246e-2, 4.26120e-2] p[5.86261e-2, 5.80189e-1]: ok, U(B) <= 1.02479e-6 [worst U <= 4.04227e-6]  (tD_14.json)
+merge the worst leaf with its sibling    C refused
+    C: K10: leaf P2p2P1p1P2 box P[3.04371e-2, 3.65246e-2] p[5.80189e-1, 1.10175e+0]: ok, U(B) <= 5.99765e-5 [worst U <= 5.99765e-5]  (tD_15.json)
+SOME TAMPER ACCEPTED
+checkD_C on tamper_D: 14 / 15 refused
+EXIT 1
+#### certUroot_m250
+control x * 1.01                         C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-7.54547e-3, -7.54547e-3])  (tD_01.json)
+control mu + 1e-9                        C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.85654e-10, -2.85654e-10])  (tD_02.json)
+alpha / 2                                C refused
+    C: K2: alpha >= beta/|G0'(a_hi)| (alpha = 4.03388014118e-1, bound 8.06776028235e-1)  (tD_03.json)
+w -> 3 (so (1-mu)^w < x < p)             C refused
+    C: K1: x < (1 - mu)^w  (x = 3.24377e-1, (1-mu)^w >= 2.12106e-1)  (tD_04.json)
+a_cut above a(0) (inside D)              C refused
+    C: K2: G0(a_cut) >= 0 (enclosure IV[-2.35517e-12, -2.35517e-12])  (tD_05.json)
+y_c - 1e-3                               C refused
+    C: K7: y_c >= Ht'(mu) (y_c = -3.26484304531e-1, Ht'(mu) <= -3.25484304531e-1)  (tD_06.json)
+u_b -> u_b * 2/3                         C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 98000000/97)  (tD_07.json)
+D not dividing 1-u_b                     C refused
+    C: K3: (1 - u_b)/Dplus a positive integer (got 2000000/3)  (tD_08.json)
+G_up below g(u_b)                        C refused
+    C: K9: G_up >= g(u_b) (g(u_b) in IV[5.06202e-2, 5.06202e-2])  (tD_09.json)
+jA0 -> last node (no slope data)         C refused
+    C: K6: 1 <= jA0 <= N - 1  (tD_10.json)
+tree -> single leaf                      C refused
+    C: K10: leaf root box P[0, 5.06202e-2] p[-4.81196e-1, 1.68734e+0]: ok, U(B) <= 2.51740e-3 [worst U <= 2.51740e-3]  (tD_11.json)
+q_1 below a_hi                           C refused
+    C: K4: q_1 >= a_hi  (tD_12.json)
+semantic: data regenerated at x e^{+2e-6}, same tree C ACCEPTED
+    C: ACCEPTED, worst U <= -8.01751e-6  (tD_13.json)
+semantic: data regenerated at x e^{+1e-5}, same tree C ACCEPTED
+    C: ACCEPTED, worst U <= -3.81657e-6  (tD_14.json)
+merge the worst leaf with its sibling    C refused
+    C: K10: leaf P2p2P2p1P1 box P[3.79651e-2, 4.42927e-2] p[6.03072e-1, 1.14520e+0]: ok, U(B) <= 4.62362e-5 [worst U <= 4.62362e-5]  (tD_15.json)
+SOME TAMPER ACCEPTED
+checkD_C on tamper_D: 13 / 15 refused
+EXIT 1
+[gate] exit 0 09:59:52
+
+######## 5. for comparison: cert/tamper_D.py run unmodified (checkD_A and checkD_B verdicts), semantic tampers
+    #### certUroot_m250
+    semantic: data regenerated at x e^{+2e-6}, same tree A ACCEPTED  B ACCEPTED
+        A: ACCEPTED
+        B: ACCEPTED
+    semantic: data regenerated at x e^{+1e-5}, same tree A ACCEPTED  B ACCEPTED
+        A: ACCEPTED
+        B: ACCEPTED
+    #### c1701_m280
+    semantic: data regenerated at x e^{+2e-6}, same tree A ACCEPTED  B ACCEPTED
+        A: ACCEPTED
+        B: ACCEPTED
+    semantic: data regenerated at x e^{+1e-5}, same tree A refused  B refused
+        A: AssertionError: box [0.0456557814984375, 0.048699500265, 0.7105805184594375, 0.840971393415375]: U = 3.497
+        B: AssertionError: box (29219700159/800000000000, 68179300371/1600000000000, 234504574719/4000000000000, 1160

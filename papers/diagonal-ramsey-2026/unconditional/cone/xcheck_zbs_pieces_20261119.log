@@ -1,0 +1,4 @@
+GATE PASSED load=40.20 at Thu Nov 19 15:13:23 +04 2026
+raw pieces compared with zbs_pieces.py: 17183 of 17183 mismatches 0 [] all covered True
+degenerate intervals: 0 []
+EXIT 0

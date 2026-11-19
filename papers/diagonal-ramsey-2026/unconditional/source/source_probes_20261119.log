@@ -1,0 +1,14 @@
+Thu Nov 19 15:43:15 +04 2026
+== RED margin probe: require Delta(s) > 1e-6 s on cells 73200..73302 (the minimum of Delta(s)/s there is about 7.75e-7, at s = 1): must FAIL
+f is C^1 on (0, 1]; f'' < 0 certified on every piece (2279 sub-intervals)
+SOURCE A: NOT CERTIFIED at ('95300000000000007/100000000000000000', '54936709694516262441650266123964413/57646075230342348800000000000000000'); cells 73200..73302; 61 evaluations; min Delta/s -
+EXIT 1
+SOURCE B: REFUSED: cell [95300000000000007/100000000000000000, 54936709694516262441650266123964413/57646075230342348800000000000000000] not certified; cells 73200..73302 of 73302; 61 evaluations; min Delta/s -
+EXIT 1
+== GREEN margin probe: require Delta(s) > 5e-7 s on the same cells: must PASS
+f is C^1 on (0, 1]; f'' < 0 certified on every piece (2279 sub-intervals)
+SOURCE A: ALL CELLS CERTIFIED; cells 73200..73302; 288 evaluations; min Delta/s 2.8371e-07
+EXIT 0
+SOURCE B: ALL CELLS CERTIFIED; cells 73200..73302 of 73302; 288 evaluations; min Delta/s 2.8371e-7
+EXIT 0
+Thu Nov 19 15:43:27 +04 2026

@@ -1,0 +1,12 @@
+leaf            A REFUSED  B REFUSED   | A: AssertionError: aU, bU | B: AssertionError: aU >= -log xi, bU >= -log nu
+leafval         A REFUSED  B REFUSED   | A: AssertionError: leaf inequality | B: AssertionError: leaf height at 289/400
+route_g0        A REFUSED  B REFUSED   | A: AssertionError: child below route 11 | B: AssertionError: child under route at 367/400
+route_ds        A REFUSED  B REFUSED   | A: AssertionError: child slope 0 | B: AssertionError: cell slope > -log(1 - p_child)
+control         A REFUSED  B REFUSED   | A: AssertionError: x <= exp(lxU) | B: AssertionError: x <= exp(lxU)
+ctl_h           A REFUSED  B REFUSED   | A: AssertionError: height at node 256, cell 255 | B: AssertionError: height node 256 cell 255
+source          A REFUSED  B REFUSED   | A: AssertionError: right tail | B: AssertionError: right tail line
+srcline         A REFUSED  B REFUSED   | A: AssertionError: grounded | B: AssertionError: grounded cell
+rootz           A REFUSED  B REFUSED   | A: AssertionError: claimed z = L_Q(1) | B: AssertionError: claimed z
+negidx          A REFUSED  B REFUSED   | A: IndexError: negative index in certificate | B: AssertionError: negative certificate index
+closed_raw_only A REFUSED  B REFUSED   | A: AssertionError | B: AssertionError: closed uses raw
+ALL RED CONTROLS REFUSED BY BOTH

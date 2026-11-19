@@ -1,0 +1,19 @@
+loaded 1 s
+UNTAMPERED control 873                                         ACCEPTED
+cd: lemmaD carries its own control with larger x               refused  TypeError: dict() got multiple values for keyword argument 'control'
+cd: bank control mu + 1e-12 (qgrid end stale)                  refused  AssertionError: exp(l1mL) <= 1-mu
+cd: bank control x + 1e-9 relative                             refused  AssertionError: x <= exp(lxU)
+cd: jA0 = 0                                                    refused  ArithmeticError: q not certified in D
+cd: jA0 = -1                                                   refused  ArithmeticError: q not certified in D
+cd: tree axis "x" at root                                      refused  AssertionError: bad tree node
+cd: qgrid N = 1                                                refused  AssertionError: box (0, 4508963587/400000000000, -428621991427/1000000000000, 108560927861/2000000000000) failed: jA
+cd: P_up below -w log u_b                                      refused  AssertionError: P_up >= -w log u_b
+cd: y_c > phi_s(u_b)                                           refused  AssertionError: y_sp >= y_c
+cd: Dplus doubled (still divides?)                             ACCEPTED
+cd: mu + 1e-12 with l1mL lowered (CtrlD.ok kept)               refused  AssertionError: q grid
+cd: x * (1+1e-6) with lxU raised (CtrlD.ok kept)               refused  AssertionError: G0(a_cut) >= 0
+cd: x * (1+2e-12) with lxU raised (CtrlD.ok kept)              refused  AssertionError: alpha >= beta/|G0'(a_hi)|
+cd: w * (1+1e-9)                                               refused  AssertionError: G0(a_cut) >= 0
+cd: beta -> 1 - 1e-6 (looser)                                  refused  AssertionError: G0(a_cut) >= 0
+cd: a "p" axis relabelled "x" (format only)                    refused  AssertionError: bad tree node
+done 10 s
