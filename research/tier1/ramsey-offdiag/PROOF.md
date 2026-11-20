@@ -59,7 +59,7 @@ both accept it with identical Phi tables.
 
 **Weight.** It is a corollary of the lab's diagonal machinery plus an exact
 function certificate; the improvement is over AI-generated, unrefereed prior work (ZBS, EP) by 2.5e-3 to 6.5e-3 in
-the exponent; over the best refereed-type bound (GNNW 2407.19026 Theorem 1) by 0.015 to 0.062. No new idea beyond
+the exponent; over the best refereed-type bound (GNNW 2407.19026 Theorem 1) by 0.015 to 0.087 on [0.201, 1] (at least 0.012 from 0.165; recomputed from the cell certificates on 20 Nov 2026, correcting the earlier "0.015 to 0.062"). No new idea beyond
 reading the bank at every ratio.
 
 ## 1. Transfer map (step 1): which parts carry over, and every use of symmetry

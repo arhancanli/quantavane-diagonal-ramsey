@@ -24,7 +24,7 @@ control (a shorter chain of proof).
 l/k ∈ [1/5, 1] (and, by symmetry, l/k ∈ [1, 5]). For example e^{Φ(1/2)} ≤ 2.3571884, e^{Φ(3/4)} ≤ 2.9323705 and
 e^{Φ(9/10)} ≤ 3.2664794. From γ = 201/1000 to 1, Φ is below every upper bound we could derive from the published
 literature and public certificates (read as generously as we could), by 2.8·10⁻³ to 6.5·10⁻³ in the exponent; below
-the bound of Gupta, Ndiaye, Norin and Wei (arXiv:2407.19026, Theorem 1) by 0.015 to 0.062. At γ = 1/5 we make no
+the bound of Gupta, Ndiaye, Norin and Wei (arXiv:2407.19026, Theorem 1) by 0.015 to 0.087 on [0.201, 1] (at least 0.012 from 0.165; recomputed from the cell certificates on 20 Nov 2026, correcting the earlier "0.015 to 0.062"). At γ = 1/5 we make no
 claim (Lu and Wang's source is lower there by 1.1·10⁻⁵). Table: `research/tier1/ramsey-offdiag/PROOF.md`, Section 0.
 
 **Theorem O-X8 (off-diagonal, below ratio 1/5; added 20 November 2026).** The same kind of statement from a third
