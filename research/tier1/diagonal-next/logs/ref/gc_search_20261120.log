@@ -1,0 +1,46 @@
+R 400 N 20000 M 4000 M2 4000 lambda/w 0.27 eps 0.0564 | exact-r check: Hs 0.25 r 4.43
+size thresholds: single-row bound tau^w e^{(1-p)/eps} <= 1 needs tau <= 4.85e-09 (N >= 2.06e+08); one column with D = 1-p adds 7.06e+03/M
+families A-F done (5 s)
+  local search from whole X                      -> n  19991  log ratio in-sample 0.00002  held-out -0.00020  (iters 2)
+  local search from random half                  -> n  19991  log ratio in-sample 0.00002  held-out -0.00020  (iters 13)
+  local search from cap t=-1.0                   -> n  19991  log ratio in-sample 0.00002  held-out -0.00020  (iters 9)
+  local search from cap t=0.0                    -> n  19991  log ratio in-sample 0.00002  held-out -0.00020  (iters 13)
+  local search from cap t=1.0                    -> n  19991  log ratio in-sample 0.00002  held-out -0.00020  (iters 18)
+  local search from column-aligned cap t=0       -> n   9998  log ratio in-sample 0.71343  held-out -0.27924  (iters 1)
+local searches done (1 s)
+
+best ratio per family  [in-sample | held-out cols | held-out minus row noise | exact finite r (beta=1)]  (n, kind of the in-sample best)
+cap                                      0.9721 |   0.9723 |   0.9722 |   0.9719   (n 18697, cap t=-1.5, noise 0.000)
+column-aligned cap                       2.1500 |   0.7643 |   0.7628 |   0.7734   (n 9899, column-aligned cap t=0.0, noise 0.002)
+2-cap intersection                       0.8635 |   0.8654 |   0.8647 |   0.8617   (n 14154, 2-cap intersection t=-1.0, noise 0.001)
+3-cap intersection                      26.0063 |  25.9840 |   0.8026 |   0.7986   (n 2, 3-cap intersection t=1.5, noise 9.727)
+2-cap union                              0.9906 |   0.9901 |   0.9901 |   0.9906   (n 19574, 2-cap union t=-1.0, noise 0.000)
+slab                                     0.8398 |   0.8403 |   0.8396 |   0.8396   (n 13664, slab (-1.00,1.00), noise 0.001)
+red-degree into 1 columns                2.1348 |   1.0000 |   1.0000 |   1.0000   (n 9909, red-degree into 1 columns, top 0.20, noise 0.002)
+red-degree into 5 columns                2.1678 |   0.9122 |   0.9118 |   0.9134   (n 746, red-degree into 5 columns, top 0.01, noise 0.050)
+red-degree into 20 columns               0.8094 |   0.8023 |   0.8012 |   0.8036   (n 11777, red-degree into 20 columns, top 0.50, noise 0.001)
+red-degree into 100 columns              0.7879 |   0.7710 |   0.7697 |   0.7827   (n 10838, red-degree into 100 columns, top 0.50, noise 0.002)
+red-degree into 500 columns              0.7967 |   0.7625 |   0.7611 |   0.7906   (n 10450, red-degree into 500 columns, top 0.50, noise 0.002)
+spectral top 0.50                        0.7819 |   0.7666 |   0.7651 |   0.7672   (n 10000, spectral top 0.50, noise 0.002)
+spectral bottom 0.50                     0.7847 |   0.7489 |   0.7474 |   0.7705   (n 10000, spectral bottom 0.50, noise 0.002)
+spectral top 0.30                        0.6688 |   0.6368 |   0.6339 |   0.6412   (n 6000, spectral top 0.30, noise 0.005)
+spectral bottom 0.30                     0.6755 |   0.6183 |   0.6155 |   0.6480   (n 6000, spectral bottom 0.30, noise 0.005)
+spectral top 0.10                        0.4912 |   0.4363 |   0.4287 |   0.4405   (n 2000, spectral top 0.10, noise 0.018)
+spectral bottom 0.10                     0.5039 |   0.4209 |   0.4136 |   0.4511   (n 2000, spectral bottom 0.10, noise 0.018)
+spectral top 0.03                        0.3645 |   0.2962 |   0.2782 |   0.2955   (n 600, spectral top 0.03, noise 0.063)
+spectral bottom 0.03                     0.3774 |   0.2901 |   0.2724 |   0.3053   (n 600, spectral bottom 0.03, noise 0.063)
+local search from whole X                1.0000 |   0.9998 |   0.9998 |   1.0000   (n 19991, local search from whole X, noise 0.000)
+local search from random half            1.0000 |   0.9998 |   0.9998 |   1.0000   (n 19991, local search from random half, noise 0.000)
+local search from cap                    1.0000 |   0.9998 |   0.9998 |   1.0000   (n 19991, local search from cap t=-1.0, noise 0.000)
+local search from column-aligned cap     2.0410 |   0.7564 |   0.7549 |   0.7755   (n 9998, local search from column-aligned cap t=0, noise 0.002)
+largest in-sample                  all sets: 26.0063 (3-cap intersection t=1.5, n 2) | sets with n >= 1000: 2.1500 (column-aligned cap t=0.0, n 9899)
+largest held-out                   all sets: 25.9840 (3-cap intersection t=1.5, n 2) | sets with n >= 1000: 1.0000 (red-degree into 1 columns, top 0.50, n 20000)
+largest held-out, noise-corrected  all sets: 1.0000 (red-degree into 1 columns, top 0.50, n 20000) | sets with n >= 1000: 1.0000 (red-degree into 1 columns, top 0.50, n 20000)
+largest exact finite r             all sets: 1.0000 (local search from whole X, n 19991) | sets with n >= 1000: 1.0000 (local search from whole X, n 19991)
+random sets of   1 rows: mean in-sample ratio 35.9, held-out 36.2, exact finite r 0.659
+random sets of   3 rows: mean in-sample ratio 15.1, held-out 15.1, exact finite r 0.337
+random sets of   5 rows: mean in-sample ratio 5.59, held-out 5.54, exact finite r 0.23
+random sets of   8 rows: mean in-sample ratio 1.69, held-out 1.64, exact finite r 0.168
+random sets of  10 rows: mean in-sample ratio 1.02, held-out 0.933, exact finite r 0.15
+random sets of  15 rows: mean in-sample ratio 0.43, held-out 0.442, exact finite r 0.124
+random sets of  30 rows: mean in-sample ratio 0.178, held-out 0.181, exact finite r 0.105

@@ -1,0 +1,15 @@
+gcc-fixed [    1s] round 0  z = 1.2171160  e^z = 3.37743  knot L_1/2(1) = 1.2171160
+gcc-fixed [   10s] round 1  z = 1.2116258  e^z = 3.35894  knot L_1/2(1) = 1.2117137
+gcc-fixed [   20s] round 2  z = 1.2086262  e^z = 3.34888  knot L_1/2(1) = 1.2087045
+gcc-fixed [   29s] round 3  z = 1.2063750  e^z = 3.34135  knot L_1/2(1) = 1.2064629
+gcc-fixed [   39s] round 4  z = 1.2051782  e^z = 3.33735  knot L_1/2(1) = 1.2052498
+gcc-fixed [   48s] round 5  z = 1.2050647  e^z = 3.33697  knot L_1/2(1) = 1.2050647
+gcc-fixed [   57s] round 6  z = 1.2042685  e^z = 3.33432  knot L_1/2(1) = 1.2043401
+gcc-fixed [   67s] round 7  z = 1.2040484  e^z = 3.33359  knot L_1/2(1) = 1.2042226
+gcc-fixed [   76s] round 8  z = 1.2040432  e^z = 3.33357  knot L_1/2(1) = 1.2042173
+gcc-fixed [   86s] round 9  z = 1.2040422  e^z = 3.33356  knot L_1/2(1) = 1.2042163
+gcc-fixed [   95s] round 10  z = 1.2040419  e^z = 3.33356  knot L_1/2(1) = 1.2042160
+gcc-fixed [  105s] round 11  z = 1.2040418  e^z = 3.33356  knot L_1/2(1) = 1.2042159
+gcc-fixed [  114s] round 12  z = 1.2040417  e^z = 3.33356  knot L_1/2(1) = 1.2042158
+gcc-fixed [  123s] round 13  z = 1.2040417  e^z = 3.33356  knot L_1/2(1) = 1.2042158
+gcc-fixed [  123s] FINAL gcc (corrected a_GC) z = 1.2040417  e^z = 3.33356

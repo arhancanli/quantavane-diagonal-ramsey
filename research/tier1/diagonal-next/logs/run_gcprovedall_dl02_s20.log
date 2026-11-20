@@ -1,0 +1,12 @@
+gcproved [    0s] grid nP 92 nMU 24 nW 16 nS 382 dl 0.0200 nG 200 smax 20
+gcproved [    1s] round 0  z = 1.2171160  e^z = 3.37743  knot L_1/2(1) = 1.2171160
+gcproved [   10s] round 1  z = 1.2115483  e^z = 3.35868  knot L_1/2(1) = 1.2116363
+gcproved [   19s] round 2  z = 1.2084806  e^z = 3.34839  knot L_1/2(1) = 1.2085685
+gcproved [   28s] round 3  z = 1.2064078  e^z = 3.34146  knot L_1/2(1) = 1.2064880
+gcproved [   38s] round 4  z = 1.2051406  e^z = 3.33723  knot L_1/2(1) = 1.2052285
+gcproved [   47s] round 5  z = 1.2041583  e^z = 3.33395  knot L_1/2(1) = 1.2042299
+gcproved [   56s] round 6  z = 1.2040881  e^z = 3.33372  knot L_1/2(1) = 1.2042299
+gcproved [   65s] round 7  z = 1.2040881  e^z = 3.33372  knot L_1/2(1) = 1.2042299
+gcproved [   75s] round 8  z = 1.2041583  e^z = 3.33395  knot L_1/2(1) = 1.2042299
+gcproved [   84s] round 9  z = 1.2040881  e^z = 3.33372  knot L_1/2(1) = 1.2042299
+gcproved [   84s] FINAL gcproved z = 1.2040881  e^z = 3.33372

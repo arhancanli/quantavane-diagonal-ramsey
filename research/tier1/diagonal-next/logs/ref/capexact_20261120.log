@@ -1,0 +1,147 @@
+### capexact R 400 p 0.5 lambda/w 0.27 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -271.8220  ratio 8.896e-119   (Gaussian-limit log ratio -65.9236)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.5 lambda/w 0.95 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -264.1310  ratio 1.947e-115   (Gaussian-limit log ratio -5.7640)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.5 lambda/w 1.0 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -263.7019  ratio 2.99e-115   (Gaussian-limit log ratio -1.3405)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.5 lambda/w 1.05 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -263.2834  ratio 4.544e-115   (Gaussian-limit log ratio 3.0830)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.5 lambda/w 1.3 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -261.3252  ratio 3.22e-114   (Gaussian-limit log ratio 25.2005)
+max log ratio 0.0162 at theta 3.000
+### capexact R 10000 p 0.5 lambda/w 0.27 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6921.5200  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.5 lambda/w 0.95 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6882.7768  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.5 lambda/w 1.0 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6880.6201  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.5 lambda/w 1.05 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6878.5166  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.5 lambda/w 1.3 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6868.6795  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 2.2260 at theta 8.500
+### capexact R 1000000 p 0.5 lambda/w 0.27 (exp form)
+theta  100.000  log tau  -5030.687  log ratio -2054.6490  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 1000000 p 0.5 lambda/w 0.95 (exp form)
+theta  100.000  log tau  -5030.687  log ratio -1715.1393  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 1000000 p 0.5 lambda/w 1.0 (exp form)
+theta  100.000  log tau  -5030.687  log ratio -1695.5877  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 1000000 p 0.5 lambda/w 1.05 (exp form)
+theta  100.000  log tau  -5030.687  log ratio -1676.4737  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 1.1629 at theta 17.500
+### capexact R 1000000 p 0.5 lambda/w 1.3 (exp form)
+theta  100.000  log tau  -5030.687  log ratio -1586.5538  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 30.6176 at theta 27.500
+### capexact R 10000 p 0.5 lambda/w 1.0 exact H 0.25
+theta   97.500  log tau -15045.550  log ratio -6918.9450  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 0.25 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -248.0316  ratio 1.911e-108   (Gaussian-limit log ratio -67.6930)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 0.27 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -246.6711  ratio 7.449e-108   (Gaussian-limit log ratio -65.9236)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 0.29 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -245.3598  ratio 2.764e-107   (Gaussian-limit log ratio -64.1542)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 0.35 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -241.6751  ratio 1.101e-105   (Gaussian-limit log ratio -58.8460)
+max log ratio 1.4810 at theta 7.500
+### capexact R 400 p 0.1 lambda/w 0.5 (exp form)
+theta   19.500  log tau   -604.047  log ratio  -233.6530  ratio 3.356e-102   (Gaussian-limit log ratio -45.5755)
+max log ratio 7.8080 at theta 7.500
+### capexact R 10000 p 0.1 lambda/w 0.25 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6793.7498  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 0.27 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6786.9128  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 0.29 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6780.3243  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 0.5310 at theta 16.500
+### capexact R 10000 p 0.1 lambda/w 0.35 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6761.8170  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 14.0745 at theta 17.000
+### capexact R 10000 p 0.1 lambda/w 0.5 (exp form)
+theta   97.500  log tau -15045.550  log ratio -6721.5498  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 45.8781 at theta 18.000
+### capexact R 1000000 p 0.1 lambda/w 0.25 (exp form)
+theta  120.000  log tau  -7258.042  log ratio -2007.8915  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0008 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 0.27 (exp form)
+theta  120.000  log tau  -7258.042  log ratio -1943.2047  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0008 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 0.29 (exp form)
+theta  120.000  log tau  -7258.042  log ratio -1880.7357  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 23.8543 at theta 53.000
+### capexact R 1000000 p 0.1 lambda/w 0.35 (exp form)
+theta  120.000  log tau  -7258.042  log ratio -1704.6277  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 159.6138 at theta 55.000
+### capexact R 1000000 p 0.1 lambda/w 0.5 (exp form)
+theta  120.000  log tau  -7258.042  log ratio -1318.8770  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio 477.4957 at theta 57.500
+### capexact R 400 p 0.1 lambda/w 0.5 exact H 0.02
+theta   19.500  log tau   -604.047  log ratio  -277.8227  ratio 2.204e-121   (Gaussian-limit log ratio -45.5755)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 1.0 exact H 0.02
+theta   19.500  log tau   -604.047  log ratio  -276.1894  ratio 1.128e-120   (Gaussian-limit log ratio -1.3405)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 0.5 exact H 0.05
+theta   19.500  log tau   -604.047  log ratio  -274.2124  ratio 8.148e-120   (Gaussian-limit log ratio -45.5755)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 1.0 exact H 0.05
+theta   19.500  log tau   -604.047  log ratio  -270.9694  ratio 2.087e-118   (Gaussian-limit log ratio -1.3405)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 0.5 exact H 0.09
+theta   19.500  log tau   -604.047  log ratio  -270.6057  ratio 3.002e-118   (Gaussian-limit log ratio -45.5755)
+max log ratio -0.0006 at theta -3.000
+### capexact R 400 p 0.1 lambda/w 1.0 exact H 0.09
+theta   19.500  log tau   -604.047  log ratio  -265.7975  ratio 3.678e-116   (Gaussian-limit log ratio -1.3405)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 0.5 exact H 0.02
+theta   97.500  log tau -15045.550  log ratio -6946.4721  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 1.0 exact H 0.02
+theta   97.500  log tau -15045.550  log ratio -6937.8664  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0007 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 0.5 exact H 0.05
+theta   97.500  log tau -15045.550  log ratio -6927.3232  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 1.0 exact H 0.05
+theta   97.500  log tau -15045.550  log ratio -6910.6852  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0007 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 0.5 exact H 0.09
+theta   97.500  log tau -15045.550  log ratio -6908.6435  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0006 at theta -3.000
+### capexact R 10000 p 0.1 lambda/w 1.0 exact H 0.09
+theta   97.500  log tau -15045.550  log ratio -6884.2124  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0007 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 0.5 exact H 0.02
+theta  120.000  log tau  -7258.042  log ratio -3244.8246  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0008 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 1.0 exact H 0.02
+theta  120.000  log tau  -7258.042  log ratio -3180.3193  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0009 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 0.5 exact H 0.05
+theta  120.000  log tau  -7258.042  log ratio -3112.8444  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0008 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 1.0 exact H 0.05
+theta  120.000  log tau  -7258.042  log ratio -2974.6565  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0009 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 0.5 exact H 0.09
+theta  120.000  log tau  -7258.042  log ratio -2970.5024  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0008 at theta -3.000
+### capexact R 1000000 p 0.1 lambda/w 1.0 exact H 0.09
+theta  120.000  log tau  -7258.042  log ratio -2756.9187  ratio 0   (Gaussian-limit log ratio nan)
+max log ratio -0.0009 at theta -3.000

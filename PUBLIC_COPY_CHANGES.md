@@ -75,3 +75,18 @@ checkers, the certificates in `certs/`) changed.
 | `research/tier2/ramsey-zbs/RESULT.md` | d6d57730f2964095d882c18e8dda5f9988040ad0886b1947de7897dc0fe11498 | 9cbfb4442f68f0f7fc3e0d4a5b5ba84c1a16c282ebac76d690c560a04ecfa418 |
 | `research/tier2/ramsey-zbs/RESULT_CD.md` | 30f7ad6f4a5dede43d1e434a610c31a58dbbba1a4d72c491caef13da6f0b97c2 | 4ee902625728ab83e1a021796d802ef76d004e69cd87628489990cc0a0dbcbd4 |
 | `research/tier2/ramsey-zbs/code/lemmaD/FROZEN.txt` | 99cffc4d738fb5723376b77175f257919116e0998d675e5a37e1ba4e702ceca3 | 5463e922e660ee9204a2eb14e17b23d5664880f757d3f3aa7ca082ed82d9c724 |
+
+## Added 20 November 2026: Theorem GC (research/tier1/diagonal-next/)
+
+Same two kinds of edits (local paths made relative or written as `<archive>/`; references to our lab notes, which are
+not public, written as such). Files whose bytes differ from the lab versions:
+
+| file | SHA-256 (lab version) | SHA-256 here |
+|---|---|---|
+| `research/tier1/diagonal-next/PROOF_GC_FINITE.md` | 02f2b8a40a57ba3ff18773a90bba2fedfeeea8ddb1a9a912d5d497db748dc776 | 7b54b3e40881747b2d6b63db6100d064f30a9c10a1159cb37040ccc8b2f0d5ee |
+| `research/tier1/diagonal-next/PROOF_GC.md` | a08cd4e73c49cca8354f0965eaf2651e1c0e49702c525010a96c14c36b533cdf | 6c1523ab21dfa9f9ce4e3eb4cfb573f617c7a876b2a0e295a7217bf45e6869af |
+| `research/tier1/diagonal-next/REFEREE_GC_FINITE_20261120.md` | 55851c9fed98b83ce8980499179dd0581f84b741562f167ad5a8be69776c07a3 | 4936f0ed5deb9fb5d1566e61eabfa69ad6c2d41bf71bc1cfc1fe5625a32ad249 |
+| `research/tier1/diagonal-next/code/dp.py` | a4d3276c403d2140b6be19a035d2bc8360b60c2bcf04818b19068f8345989274 | 226493778e95221025d686e5c62d045866f7aa7e31c098c4adb70953b82c77b7 |
+| `research/tier1/diagonal-next/code/ramsey_gauss_cap.py` | 45ece7d4100765f057ffd67502396879e277fe4457e74e9ef4d9116ee4160632 | c8259c39f0ea4c16d6a336195ebcab47cbe7382d8182dcf6fd7bd3da84afdfa8 |
+| `research/tier1/diagonal-next/code/ramsey_gc_subpairs.py` | 6cd671fc955608b7539379183784af4c9c5d3e8eed1b3b638150d46a7fb42e33 | 996e2212d1667ebec9d154115c0c3558d798b7170cdcd633f9415a0158a07d05 |
+| `research/tier1/diagonal-next/code/ramsey_xsym.py` | a83f540a1a308542b8ab1c2322e529365c2f5cc25f5919fb94e5a9aacfd8a624 | e735d3521b01379b7314af729ac575cfd61bc0968dc980037e0e99a6e749476b |

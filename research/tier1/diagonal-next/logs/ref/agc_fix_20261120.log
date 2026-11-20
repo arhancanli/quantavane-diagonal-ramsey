@@ -1,0 +1,29 @@
+cells 19522
+as drafted (lambda <= w): a - a_GC min 0.0005 median 0.0295; GC share median 0.603, range [0.000, 0.707]; optimum lambda/w median 0.111 max 0.815
+corrected (lambda <= w min(1, L^-2)): a - a_GC min 0.0005 median 0.0297; GC share median 0.601, range [0.000, 0.707]; optimum lambda/w median 0.106 max 0.767
+cells whose drafted optimum violates the corrected constraint: 1353 of 19522; a_GC drop: max 0.3190, mean over those 0.0332
+p 0.0125 L 7.9066 cap 0.016 | certified cells  272, violating  272 | drafted lambda/w median 0.132 max 0.531 | max a_GC drop 0.3190
+p 0.0250 L 4.7334 cap 0.045 | certified cells  268, violating  265 | drafted lambda/w median 0.135 max 0.641 | max a_GC drop 0.2907
+p 0.0375 L 3.5580 cap 0.079 | certified cells  267, violating  237 | drafted lambda/w median 0.135 max 0.635 | max a_GC drop 0.2497
+p 0.0500 L 2.9287 cap 0.117 | certified cells  271, violating  164 | drafted lambda/w median 0.133 max 0.635 | max a_GC drop 0.2172
+p 0.0625 L 2.5315 cap 0.156 | certified cells  278, violating  107 | drafted lambda/w median 0.131 max 0.815 | max a_GC drop 0.2358
+p 0.0750 L 2.2557 cap 0.197 | certified cells  272, violating   74 | drafted lambda/w median 0.132 max 0.815 | max a_GC drop 0.1934
+p 0.0875 L 2.0520 cap 0.237 | certified cells  271, violating   53 | drafted lambda/w median 0.130 max 0.815 | max a_GC drop 0.1758
+p 0.1000 L 1.8950 cap 0.278 | certified cells  270, violating   39 | drafted lambda/w median 0.131 max 0.806 | max a_GC drop 0.1420
+p 0.1125 L 1.7700 cap 0.319 | certified cells  260, violating   32 | drafted lambda/w median 0.133 max 0.806 | max a_GC drop 0.1261
+p 0.1250 L 1.6680 cap 0.359 | certified cells  261, violating   24 | drafted lambda/w median 0.132 max 0.806 | max a_GC drop 0.1006
+p 0.1375 L 1.5832 cap 0.399 | certified cells  262, violating   18 | drafted lambda/w median 0.132 max 0.796 | max a_GC drop 0.0787
+p 0.1500 L 1.5115 cap 0.438 | certified cells  260, violating   13 | drafted lambda/w median 0.130 max 0.796 | max a_GC drop 0.0596
+p 0.1625 L 1.4501 cap 0.476 | certified cells  264, violating   12 | drafted lambda/w median 0.128 max 0.796 | max a_GC drop 0.0436
+p 0.1750 L 1.3971 cap 0.512 | certified cells  263, violating   10 | drafted lambda/w median 0.129 max 0.796 | max a_GC drop 0.0330
+p 0.1875 L 1.3508 cap 0.548 | certified cells  261, violating    8 | drafted lambda/w median 0.128 max 0.787 | max a_GC drop 0.0227
+p 0.2000 L 1.3102 cap 0.583 | certified cells  255, violating    6 | drafted lambda/w median 0.129 max 0.787 | max a_GC drop 0.0158
+p 0.2125 L 1.2742 cap 0.616 | certified cells  251, violating    4 | drafted lambda/w median 0.129 max 0.787 | max a_GC drop 0.0108
+p 0.2250 L 1.2423 cap 0.648 | certified cells  243, violating    4 | drafted lambda/w median 0.130 max 0.787 | max a_GC drop 0.0067
+p 0.2375 L 1.2138 cap 0.679 | certified cells  243, violating    4 | drafted lambda/w median 0.129 max 0.777 | max a_GC drop 0.0039
+p 0.2500 L 1.1883 cap 0.708 | certified cells  238, violating    4 | drafted lambda/w median 0.130 max 0.777 | max a_GC drop 0.0019
+p 0.2625 L 1.1654 cap 0.736 | certified cells  238, violating    2 | drafted lambda/w median 0.129 max 0.777 | max a_GC drop 0.0005
+p 0.2750 L 1.1447 cap 0.763 | certified cells  238, violating    1 | drafted lambda/w median 0.129 max 0.777 | max a_GC drop 0.0001
+p 0.3000 L 1.1094 cap 0.812 | certified cells  235, violating    0 | drafted lambda/w median 0.127 max 0.767 | max a_GC drop 0.0000
+p 0.5000 L 1.0000 cap 1.000 | certified cells  238, violating    0 | drafted lambda/w median 0.110 max 0.703 | max a_GC drop 0.0000
+check against logs/agc_m4w4.npz (drafted table): max |diff| 0.00e+00

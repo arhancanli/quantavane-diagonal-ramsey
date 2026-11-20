@@ -1,0 +1,12 @@
+rand [    0s] grid nP 92 nMU 24 nW 16 nS 382 dl 0.0200 nG 200 smax 20
+rand [    1s] round 0  z = 1.1366510  e^z = 3.11631  knot L_1/2(1) = 1.1366510
+rand [   12s] round 1  z = 1.1061054  e^z = 3.02256  knot L_1/2(1) = 1.1061054
+rand [   22s] round 2  z = 1.0923143  e^z = 2.98117  knot L_1/2(1) = 1.0923143
+rand [   34s] round 3  z = 1.0894777  e^z = 2.97272  knot L_1/2(1) = 1.0894777
+rand [   45s] round 4  z = 1.0881557  e^z = 2.96879  knot L_1/2(1) = 1.0881557
+rand [   56s] round 5  z = 1.0879386  e^z = 2.96815  knot L_1/2(1) = 1.0879386
+rand [   66s] round 6  z = 1.0877872  e^z = 2.96770  knot L_1/2(1) = 1.0877872
+rand [   76s] round 7  z = 1.0868598  e^z = 2.96495  knot L_1/2(1) = 1.0868598
+rand [   86s] round 8  z = 1.0868598  e^z = 2.96495  knot L_1/2(1) = 1.0868598
+rand [   95s] round 9  z = 1.0868598  e^z = 2.96495  knot L_1/2(1) = 1.0868598
+rand [   95s] FINAL rand z = 1.0868598  e^z = 2.96495
