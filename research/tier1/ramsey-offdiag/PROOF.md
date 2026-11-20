@@ -1,7 +1,7 @@
 # Off-diagonal Ramsey bounds R(k, l), l = gamma k, from the unconditional bank (Theorem O)
 
 Lane `research/tier1/ramsey-offdiag`, opened 19 Nov 2026 21:0x +04. All logarithms natural. "SC" is
-papers/diagonal-ramsey-2026/SELF_CONTAINED.md v5. Public copy (deposit of 19 Nov 2026); not yet peer reviewed.
+papers/diagonal-ramsey-2026/SELF_CONTAINED.md v5. Public copy (deposit of 19-20 Nov 2026); not yet peer reviewed.
 
 ## 0. Claim and what it rests on
 
@@ -89,8 +89,9 @@ best split moves away from 1/2 as gamma falls (certificate: p_R = 0.50625 at 0.9
 the red side is almost unconditional and the blue side is a dense-host profile).
 
 Limits of the transfer (each a dated finding, 19 Nov):
-1. Ratios below 1/5: the bank has no profile there (ZBS's design, kept by our generator); the sources there are
-   Lu-Wang tangents. No gain for gamma < 0.2; at gamma = 1/5 Lu-Wang's f is better by 1.1e-5.
+1. Ratios below 1/5 (for Theorem O's bank): no blue-side profile beyond ratio 5 (ZBS's design, kept by our
+   generator); the sources there are Lu-Wang tangents. No gain for gamma < 0.2 from that bank; at gamma = 1/5
+   Lu-Wang's f is better by 1.1e-5. Lifted in Section 7 (bank on [1/8, 8], record from 0.165).
 2. The bank was optimised for the diagonal root only. Off the diagonal Phi comes from generic profiles with 1/400
    knots. At gamma = 1 the dedicated root is 6.4e-4 below the best generic pair (1.247786 vs 1.248430), so dedicated
    roots at other ratios would give roughly that much more (float, measured at gamma = 1 only).
@@ -211,7 +212,7 @@ Baseline, made as low as possible (code/ramsey_offdiag_vs_published.py, exact fo
 
 ## 5. Not claimed
 
-- Nothing for gamma < 201/1000.
+- Nothing for gamma < 201/1000 from Theorem O; Section 7 extends the record region to [0.165, 1].
 - Phi is not optimised off the diagonal (Section 1, limit 2).
 - No multicolour result (Section 1, limit 3).
 - The record is against unrefereed, AI-generated work (ZBS, EP), as is the diagonal result it rests on.
@@ -239,3 +240,75 @@ arithmetic; the transfer map items (i)-(iii) PASS (Corollary 5.10 is the only us
 10. Wording of the P4 row: corrected (Section 1).
 No re-referee of the fixes (they are the referee's own specifications and touch the comparison and reporting, not the
 soundness of Theorem O).
+
+## 7. Extension below ratio 1/5: Theorem O-X8 (20 Nov 2026; Lemma C controls only)
+
+**Theorem O-X8.** Let Phi be given by the certificate `cert/offdiag_x8_v1.json` (SHA-256 7eba8562bf5a...ed258b63):
+1,751 cells tiling [1/8, 1] (29 src, 1,722 pair), affine on each cell. Let C_* be the constant of Theorem 5.7 for the
+bank certX8-full (SHA-256 d3c8cd100f97...0177f6e86). Then for all integers k, l >= 1 and every cell i with
+l/k in [lo_i, hi_i]: R(k, l) <= ceil(C_* e^{k Phi_i(l/k)}); by R(k, l) = R(l, k) this covers l/k in [1, 8] too; and
+for every fixed gamma in [1/8, 1], log R(k, floor(gamma k)) <= Phi(gamma) k + O(1) for k >= 8 (so that
+floor(gamma k) >= 1). The proof is that of Theorem O (Section 2) word for word. Every control of certX8-full carries a Lemma C certificate (none of kind Lemma D), so Theorem O-X8 rests
+on the chain of Theorem 1U only (SC Theorem 5.7 restated, P1, P2, P4, Lemma C): no Theorem A, no Lemma D.
+
+**Record region.** The comparison v3 (code/ramsey_offdiag_vs_published3.py; Section 4's generous baseline, with two
+corrections needed once the claim starts below 1/5: on cell j the ratio term uses cells i > j only, and the tail
+test is for published ratios below the first cell, g_lo) passes from gamma = 33/200 = 0.165 to 1 (ALL_OK; at 31/200
+and 4/25 some cells fail the conservative cellwise test). Regression: certCD3 from 201/1000 is still ALL_OK under v3.
+Why v3 is still sufficient (v3 RELAXES two over-conservative points of v2; the rule is: a published claim at ratio y
+beats nothing of ours iff E(y) > Phi(g) for y >= g and E(y)/y > Phi(g)/g for y < g):
+- same cell: for y and g in one cell j, E(y) > U_j = max(v_lo_j, v_hi_j) gives E(y) > Phi(g) (if y >= g) and
+  E(y) > Phi(g) >= (y/g) Phi(g) (if y < g; Phi > 0 is asserted); so only cells i > j need the ratio term
+  hi_j max_{i > j} max(v_lo_i/lo_i, v_hi_i/hi_i) (Phi_i(g)/g = c_i/g + s_i is monotone on cell i, and y <= hi_j);
+- tail: published claims at y below the first cell g_lo (not below 1/5) are the ones with y < g for every claimed g;
+  they are tested against y max_{i >= i0} Phi_i/g; sources exactly at y = g_lo ((A + yB)/y and (B + yA)/y decrease in
+  y), no published pair exists there (published profiles end at ratio <= 5, asserted), curves on a float grid
+  (margin 2.83 vs 2.64 in E(y)/y).
+- Lu-Wang's f, the binding comparator on [0.165, 0.2] (float margin after the slope allowance only 1.9e-5, referee
+  finding 3), is now checked EXACTLY (code/ramsey_lwf_exact.py: Arb at 200 bits, P evaluated in exact rationals,
+  f(lo_j) > T_j on every cell; f-hat is concave and positive on (0, infinity), hence nondecreasing, so f(lo_j) is its
+  minimum on the cell): smallest margin 2.4e-4 at 329/2000 (runs/lwf_exact_x8_33_200.log; for certCD3 from 201/1000:
+  2.3e-3). The bank tangents are exact in v3 (margin 2.5e-4). GNNW, NSS and ES remain float with larger margins.
+Gains below 1/5 (checker values against the best published exponent, Lu-Wang's f or the banks): in the record region
+0.17: 1.38e-3; 0.18: 1.81e-3; 0.19: 2.61e-3; 0.2: 3.09e-3; pointwise only, outside the record region (the cellwise test
+fails on [0.155, 0.165)): 0.15: 5.6e-4, 0.16: 1.19e-3. At 1/8 no gain (-8e-6). Above 0.2 Phi_X8 is within 6e-4 of
+Theorem O's Phi: higher by up to 5.8e-4 (at 2/5; 3.1e-4 at 2/3, 2.6e-4 at 1) and lower by up to 1.1e-4 (at 17/20);
+hence the minimum of the two in the combined statement (table: runs/table_x8_v1.md).
+
+**How the bank was built (proposals; the checkers decide).** code/ramsey_gen2_ext.py and code/ramsey_materialise_ext.py
+are the lab's gen2.py and materialise.py with the ratio range [1/5, 5] made a parameter R (here 8): the grid, the
+knots of the closed object U, the source-cover range and the grounded tails. Generator: certK3 recipe (kp = 2, 9
+rounds, root refinement), 19 Nov 23:54 - 20 Nov 04:19. Chain (code/ramsey_ext_chain.sh, runs/chain_certX8.log):
+materialise -> certX8.json (SHA-256 06739e02...6d3f60; 1,833 controls, 4,469 sources, 1,748 raw, 11 closed) -> bank
+checker A ok (969 s) and B ok (99 s) -> cone (463 ZBS raw, 5 ZBS sources referenced directly; closure 1,902 raw, 1,001 of 1,003 closed, 2,713 sources,
+918 controls) ->
+full assembly -> certX8-full.json (3,650 raw, 1,012 closed, 7,182 sources, 2,751 controls) -> structure check FULL
+CHECK OK -> preflight OK (min(eps, eta) = 5e-13 > 8e-15, the Theorem 5.7 proviso; 0 Lemma D controls) -> bank checker
+A ok (1,902 s) and B ok (226 s) on certX8-full. The bank checkers and Theorem 5.7 are unchanged and range-agnostic
+(profiles on any compact interval of (0, infinity), sources with any [l_h, H_h]); this is a point for the referee.
+
+**Off-diagonal checks.** Checkers A and B (pins extended to the certX8-full hash; in B only the pin and six extra
+table points were added, on 20 Nov, by the lane): both ok, identical exact Phi at the 23 common table points; checker
+A requires g_lo = 1/8 for this bank. Red controls: the 11 tampers, made from this certificate, refused by both; clean
+accepted (runs/red_check*_x8_v1.log). After the referee: tamper r12 (a pair cell below 1/5 whose S interval no
+longer covers [1/hi, 1/lo], inside [5, 8]) added; all 12 refused by both checkers, clean accepted
+(runs/red_check*_x8_v2.log).
+
+**Side result (not off-diagonal).** certX8's diagonal root is z = 1248049473997/10^12, e^z <= 3.4835415881 (both bank
+checkers), 6.8e-6 below certK3's 1.248056263241 on the same Lemma-C-only chain. It is not below Theorem 2U
+(1.247786467). Recorded as a by-product only.
+
+**Combined statement.** Both theorems hold, each with its own constant; so log R(k, floor(gamma k)) <= min(Phi_CD3,
+Phi_X8)(gamma) k + O(1) on [1/5, 1] and Phi_X8 on [1/8, 1/5). The record claim: below every published bound on
+[0.165, 1].
+
+### 7.1 Referee record for Section 7
+
+20 Nov 2026 05:5x-06:0x +04, one fresh-context referee (scope: range-agnosticism of Theorem 5.7 and of the unchanged bank
+checkers for profiles on [1/8, 8]; the generator/materialise copies; comparison v3; the pin edits; the numbers).
+Verdict: PASS WITH FIXES; nothing touching soundness. Range-agnosticism PASS (M_I = 8 only enlarges C_*; Lemma 5.8
+needs alpha, theta > 0; tails use lines valid for all lambda > 0; the proviso comes from the Lu-Wang cut-off; no
+checker logic tied to [1/5, 5]); copies PASS (diffs confined to the range, identical at RMAX = 5); v3 logic PASS; pins
+PASS. Fixes applied: a false sentence ("within 2e-4 of Theorem O") corrected; v3's relaxations argued here; Lu-Wang f
+made exact on every cell (Arb); statement written out (k >= 8, [1, 8] by symmetry); scope sentences in Sections 1 and
+5; cone counts; stale comments; red control r12.

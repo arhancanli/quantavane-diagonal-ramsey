@@ -1,0 +1,14 @@
+refused OK  r10_unknown_kind.json: REFUSED: unknown kind 'leaf'
+refused OK  r11_g_lo_changed.json: REFUSED: g_lo must be 1/8 for this bank
+refused OK  r12_S_interval_short_below_1_5.json: REFUSED: cell 89: [1/hi, 1/lo] not in I_S
+refused OK  r1_pair_vhi_minus_1e-9.json: REFUSED: cell 1550 (pair): bound exceeds Phi by 9.9723e-10
+refused OK  r2_src_vlo_minus_1e-9.json: REFUSED: cell 0 (src): bound exceeds Phi by 9.975e-10
+refused OK  r3_density_sum_above_1.json: REFUSED: cell 950: densities sum above 1
+refused OK  r4_tiling_gap.json: REFUSED: cells do not tile at cell 100
+refused OK  r5_wrong_bank_sha.json: REFUSED: certificate names another bank
+refused OK  r6_R_interval_misses_cell.json: REFUSED: cell 1550: [lo, hi] not in I_R
+refused OK  r7_string_index.json: REFUSED: claim index out of range
+refused OK  r8_src_orientation_swapped.json: REFUSED: cell 0 (src): bound exceeds Phi by 1.632478442540875
+refused OK  r9_last_cell_missing.json: REFUSED: cells do not reach 1
+green OK  clean certificate accepted
+red/green failures: 0

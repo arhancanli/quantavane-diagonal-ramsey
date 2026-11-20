@@ -60,9 +60,12 @@ EXIT_REFUSED = 2
 PINNED_BANKS = {
     "32bcafd3fccbf094c83cc942669b3b843f09a3b10f87a6bd6a465d112bb07af8": "certCD3-full",
     "38091eed691b3ffa954d81e9658885cb68fb30e4e46ae76ddc376444f69ee468": "certK3-full",
+    # added 20 Nov 2026 by the lane (pin only; no other change): the extended-range bank
+    "d3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86": "certX8-full",
 }
 
-TABLE_G = ["1/5", "21/100", "1/4", "3/10", "1/3", "2/5", "1/2", "3/5", "2/3",
+TABLE_G = ["1/8", "3/20", "4/25", "17/100", "9/50", "19/100",  # first six added 20 Nov 2026 (reporting only)
+           "1/5", "21/100", "1/4", "3/10", "1/3", "2/5", "1/2", "3/5", "2/3",
            "7/10", "3/4", "4/5", "17/20", "9/10", "19/20", "99/100", "1"]
 
 

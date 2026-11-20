@@ -7,7 +7,8 @@ Statement checked, for every cell i = [lo, hi] with affine Phi_i(g) = v_lo + (v_
                   L_R(g) <= Phi_i(g) and g L_S(1/g) <= Phi_i(g), checked at T = {lo, hi} u {knots of R in (lo, hi)}
                   u {1/y : y knot of S in (1/hi, 1/lo)}; between consecutive points of T every side is affine
                   (on a piece of S, L_S(t) = c + d t gives g L_S(1/g) = c g + d).
-Cells must tile [g_lo, 1] in order. Bank: certCD3-full.json or certK3-full.json, pinned by SHA-256.
+Cells must tile [g_lo, 1] in order. Bank: certCD3-full.json, certK3-full.json (g_lo = 1/5) or certX8-full.json
+(g_lo = 1/8), pinned by SHA-256.
 usage: python3 -I ramsey_offdiag_checkA.py bank_full.json offdiag_cert.json [out.json]
 """
 import sys, json, hashlib, time
@@ -17,8 +18,12 @@ assert __debug__, 'refusing to run under python -O'
 PINNED = {
     '32bcafd3fccbf094c83cc942669b3b843f09a3b10f87a6bd6a465d112bb07af8': 'certCD3-full (Theorem 2U bank)',
     '38091eed691b3ffa954d81e9658885cb68fb30e4e46ae76ddc376444f69ee468': 'certK3-full (Theorem 1U bank)',
+    'd3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86': 'certX8-full (ratio range [1/8, 8], Lemma C controls only)',
 }
-REPORT_G = ['1/5', '21/100', '1/4', '3/10', '1/3', '2/5', '1/2', '3/5', '2/3', '7/10', '3/4', '4/5', '17/20', '9/10',
+G_LO = {'32bcafd3fccbf094c83cc942669b3b843f09a3b10f87a6bd6a465d112bb07af8': Fr(1, 5),
+        '38091eed691b3ffa954d81e9658885cb68fb30e4e46ae76ddc376444f69ee468': Fr(1, 5),
+        'd3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86': Fr(1, 8)}
+REPORT_G = ['1/8', '3/20', '4/25', '17/100', '9/50', '19/100', '1/5', '21/100', '1/4', '3/10', '1/3', '2/5', '1/2', '3/5', '2/3', '7/10', '3/4', '4/5', '17/20', '9/10',
             '19/20', '99/100', '1']
 
 
@@ -103,7 +108,7 @@ def main():
         return cache[key]
 
     g_lo = q(cert['g_lo'])
-    need(g_lo == Fr(1, 5), 'g_lo must be 1/5')  # referee 19 Nov, finding 8
+    need(g_lo == G_LO[sha], 'g_lo must be %s for this bank' % G_LO[sha])  # referee 19 Nov, finding 8
     cells = cert['cells']
     need(len(cells) >= 1, 'no cells')
     prev = g_lo

@@ -1,4 +1,4 @@
-# R(k,k) ≤ (3.4827 + o(1))^k, unconditionally, and off-diagonal bounds for R(k, γk), 1/5 ≤ γ ≤ 1
+# R(k,k) ≤ (3.4827 + o(1))^k, unconditionally, and off-diagonal bounds for R(k, γk), 1/8 ≤ γ ≤ 1
 
 **Status: verified by two independent programs and an internal referee; not yet peer reviewed.**
 
@@ -26,6 +26,18 @@ e^{Φ(9/10)} ≤ 3.2664794. From γ = 201/1000 to 1, Φ is below every upper bou
 literature and public certificates (read as generously as we could), by 2.8·10⁻³ to 6.5·10⁻³ in the exponent; below
 the bound of Gupta, Ndiaye, Norin and Wei (arXiv:2407.19026, Theorem 1) by 0.015 to 0.062. At γ = 1/5 we make no
 claim (Lu and Wang's source is lower there by 1.1·10⁻⁵). Table: `research/tier1/ramsey-offdiag/PROOF.md`, Section 0.
+
+**Theorem O-X8 (off-diagonal, below ratio 1/5; added 20 November 2026).** The same kind of statement from a third
+bank certificate, `certs/certX8-full.json.gz`, whose profiles live on ratios [1/8, 8] instead of [1/5, 5] and whose
+controls all carry Lemma C certificates (the chain of Theorem 1U, no Lemma D): a function Φ on [1/8, 1] (1,751 cells,
+`research/tier1/ramsey-offdiag/cert/offdiag_x8_v1.json`) with R(k, l) ≤ ⌈C e^{k Φ(l/k)}⌉ for l/k ∈ [1/8, 1] (and
+[1, 8] by symmetry). From γ = 0.165 to 1 it is below every upper bound we could derive from the published literature
+and public certificates; below 1/5 the gain over Lu and Wang's source is 1.4·10⁻³ at γ = 0.17, 1.8·10⁻³ at 0.18,
+2.6·10⁻³ at 0.19 and 3.1·10⁻³ at 0.2 (for example e^{Φ(0.18)} ≤ 1.5733613 and e^{Φ(0.19)} ≤ 1.5991052). Both theorems
+hold, so on [1/5, 1] the smaller of the two functions is a bound. The bank was built with the same generator, its ratio
+range made a parameter, and passed the same two bank checkers, assembly and preflight as the other two. Details:
+`research/tier1/ramsey-offdiag/PROOF.md`, Section 7. Its diagonal root, z = 1248049473997/10¹² (e^z ≤ 3.4835415881),
+is a little below Theorem 1U's but not below Theorem 2U's.
 
 The constant C is not effective: it comes from compactness arguments in the proof.
 
@@ -67,23 +79,25 @@ extended bank, and Corollary O with the certificate of Φ. The chain is stated i
 
 ## Checking it: one command
 
-    FLINT_PYTHON=/path/to/python-with-python-flint-0.9.0 sh check.sh        # about 20-30 minutes
-    FLINT_PYTHON=... sh check.sh full                                       # about 2-3 hours
+    FLINT_PYTHON=/path/to/python-with-python-flint-0.9.0 sh check.sh        # about 30-40 minutes
+    FLINT_PYTHON=... sh check.sh full                                       # about 2.5-3.5 hours
 
 `check.sh` fetches the public inputs (ZBS's tables and lines at c2875f33, Lu–Wang's source at 5ec98f47) and checks
-their SHA-256; parses ZBS's tables; unpacks the two full bank certificates in `certs/` and checks their SHA-256; runs
-the preflight (pins of the frozen Lemma D code, the structure, and the proviso of Theorem 5.7); runs checker B on both
-banks; checks Theorem O with checkers A and B and refuses its eleven red controls. `full` adds checker A on both banks,
+their SHA-256; parses ZBS's tables; unpacks the three full bank certificates in `certs/` and checks their SHA-256; runs
+the preflight (pins of the frozen Lemma D code, the structure, and the proviso of Theorem 5.7); runs checker B on the
+three banks; checks Theorem O with checkers A and B and refuses its eleven red controls, and Theorem O-X8 likewise with
+twelve. `full` adds checker A on the three banks,
 the 1,128 lines of ZBS's list (two programs), Lu–Wang's source criterion on 73,302 cells (two programs) and the third
 Lemma D checker. It ends with `ALL CHECKS PASSED` or stops at the first failure.
 
 - **Certificates.** `certs/certCD3-full.json.gz` (Theorem 2U; 382 MB unpacked, SHA-256 32bcafd3…07af8) and
-  `certs/certK3-full.json.gz` (Theorem 1U; 363 MB, SHA-256 38091eed…ee468): our new objects plus every object of ZBS's
+  `certs/certK3-full.json.gz` (Theorem 1U; 363 MB, SHA-256 38091eed…ee468), and `certs/certX8-full.json.gz` (Theorem
+  O-X8; 382 MB, SHA-256 d3c8cd10…6f86; profiles on ratios [1/8, 8]): our new objects plus every object of ZBS's
   bank in the reference cone, each control with a Lemma C or Lemma D certificate, the root a complementary pair at
   z. `research/tier1/ramsey-offdiag/cert/`: the certificates of Φ.
 - **Checker A** (`research/tier2/ramsey-zbs/code/checkA/`): exact rationals and our own outward-rounded dyadic
   intervals. **Checker B** (`code/checkB/`): Arb balls (python-flint 0.9.0), written separately. Each implements the
-  bank conditions clause by clause; both accept both banks with the same z. The Lemma D certificates are also checked
+  bank conditions clause by clause; both accept each bank with the same z. The Lemma D certificates are also checked
   by a third, separately written checker (`research/tier2/ramsey-lemma/cert_independent/checkD_C.py`).
 - **Red controls.** Tampered certificates must be refused: 11 for the bank checkers (run in the lab; logs in
   `papers/diagonal-ramsey-2026/unconditional/cone/`), 11 for Theorem O (run by `check.sh`), preflight tampers.
@@ -153,9 +167,9 @@ The folders keep the paths of our lab repository, so that the programs' relative
 | `papers/diagonal-ramsey-2026/unconditional/` | blocks P1–P4 (`P*_*.md`), the programs and logs for the lines (2a), the source (2b) and the full banks (2c), referee reports |
 | `research/tier2/ramsey-zbs/` | Lemma C and the extended bank (`PROOF.md`), checkers A and B, red controls, the generator (`search/`, proposes data only) |
 | `research/tier2/ramsey-lemma/` | Theorem A and Lemma D (`PROOF.md`, `CERT_DESIGN.md`), the Lemma D certificates and checkers |
-| `research/tier1/ramsey-offdiag/` | Theorem O (`PROOF.md`), its certificates, checkers, red controls and runs |
+| `research/tier1/ramsey-offdiag/` | Theorems O and O-X8 (`PROOF.md`), their certificates, checkers, red controls and runs |
 | `research/tier1/diagonal-next/` | Proposition QR and Theorem GC (proofs, referee reports, the programs behind them, run logs) |
-| `certs/` | the two full bank certificates (gzip) |
+| `certs/` | the three full bank certificates (gzip) |
 | `PUBLIC_COPY_CHANGES.md` | the files edited for this public copy (status sentences, local paths), with their hashes before and after |
 
 ## Authorship and the role of AI

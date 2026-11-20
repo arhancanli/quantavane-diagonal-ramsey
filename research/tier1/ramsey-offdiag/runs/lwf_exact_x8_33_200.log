@@ -1,0 +1,4 @@
+06:04:35 gate ok, load 39
+cells 1751 claim from 33/200 ; f(lo_j) > T_j (Arb, 200 bits) fails at [] ; smallest margin 2.435e-04 at g = 329/2000
+LWF_EXACT_OK True
+EXIT 0 06:04:36

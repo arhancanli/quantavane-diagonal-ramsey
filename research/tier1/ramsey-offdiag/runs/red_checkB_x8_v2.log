@@ -1,0 +1,14 @@
+refused OK  r10_unknown_kind.json: REFUSED: cell 1550: unknown kind 'leaf'
+refused OK  r11_g_lo_changed.json: REFUSED: cell 0: lo 1/8 != g_lo 1/4
+refused OK  r12_S_interval_short_below_1_5.json: REFUSED: cell 89: [1/hi, 1/lo] = [100/17, 2000/339] not inside I_S = [1/80, 51/400] (bank.raw[0])
+refused OK  r1_pair_vhi_minus_1e-9.json: REFUSED: cell 1550: g*L_S(1/g) exceeds Phi at g=1801/2000 by 99723/100000000000000
+refused OK  r2_src_vlo_minus_1e-9.json: REFUSED: cell 0: src bound exceeds Phi at g=1/8 by 399/400000000000
+refused OK  r3_density_sum_above_1.json: REFUSED: cell 950: p_R + p_S = 47/80 + 67/160 > 1
+refused OK  r4_tiling_gap.json: REFUSED: cell 100: lo 175000000001/1000000000000 != previous hi 7/40 (tiling broken)
+refused OK  r5_wrong_bank_sha.json: REFUSED: cert: bank_sha256 '0000000000000000000000000000000000000000000000000000000000000000' does not match the bank file's SHA-256 d3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86
+refused OK  r6_R_interval_misses_cell.json: REFUSED: cell 1550: [lo, hi] = [9/10, 1801/2000] not inside I_R = [1/80, 51/400] (bank.raw[0])
+refused OK  r7_string_index.json: REFUSED: cell 1550.R: index must be a JSON integer, got str '1504'
+refused OK  r8_src_orientation_swapped.json: REFUSED: cell 0: src bound exceeds Phi at g=1/8 by 13059827540327/8000000000000
+refused OK  r9_last_cell_missing.json: REFUSED: cert: last hi 9999999999/10000000000 != 1
+green OK  clean certificate accepted
+red/green failures: 0

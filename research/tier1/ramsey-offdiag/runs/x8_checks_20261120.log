@@ -1,0 +1,17 @@
+05:27:01 gate ok, load 49: checkA
+A exit 0
+05:27:49 gate ok, load 49: checkB
+B exit 0
+05:28:00 gate ok, load 54: red_make
+made ['r10_unknown_kind.json', 'r11_g_lo_changed.json', 'r1_pair_vhi_minus_1e-9.json', 'r2_src_vlo_minus_1e-9.json', 'r3_density_sum_above_1.json', 'r4_tiling_gap.json', 'r5_wrong_bank_sha.json', 'r6_R_interval_misses_cell.json', 'r7_string_index.json', 'r8_src_orientation_swapped.json', 'r9_last_cell_missing.json']
+05:28:52 gate ok, load 51: redA
+red/green failures: 0
+05:32:24 gate ok, load 51: redB
+red/green failures: 0
+05:33:18 gate ok, load 41: vs2 3/20
+vs2 3/20 exit 0
+05:34:43 gate ok, load 50: vs2 4/25
+vs2 4/25 exit 0
+05:36:10 gate ok, load 58: vs2 17/100
+vs2 17/100 exit 0
+X8 CHECKS DONE

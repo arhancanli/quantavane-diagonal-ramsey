@@ -1,0 +1,13 @@
+05:39:42 gate ok, load 55: cd3 201/1000
+cd3 201/1000 exit 0: ALL_OK True
+05:41:02 gate ok, load 54: x8 31/200
+x8 31/200 exit 0: ALL_OK False
+05:43:22 gate ok, load 53: x8 4/25
+x8 4/25 exit 0: ALL_OK False
+05:45:15 gate ok, load 49: x8 33/200
+x8 33/200 exit 0: ALL_OK True
+05:46:39 gate ok, load 45: x8 17/100
+x8 17/100 exit 0: ALL_OK True
+05:47:57 gate ok, load 47: x8 7/40
+x8 7/40 exit 0: ALL_OK True
+DONE

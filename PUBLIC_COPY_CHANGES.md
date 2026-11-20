@@ -90,3 +90,21 @@ not public, written as such). Files whose bytes differ from the lab versions:
 | `research/tier1/diagonal-next/code/ramsey_gauss_cap.py` | 45ece7d4100765f057ffd67502396879e277fe4457e74e9ef4d9116ee4160632 | c8259c39f0ea4c16d6a336195ebcab47cbe7382d8182dcf6fd7bd3da84afdfa8 |
 | `research/tier1/diagonal-next/code/ramsey_gc_subpairs.py` | 6cd671fc955608b7539379183784af4c9c5d3e8eed1b3b638150d46a7fb42e33 | 996e2212d1667ebec9d154115c0c3558d798b7170cdcd633f9415a0158a07d05 |
 | `research/tier1/diagonal-next/code/ramsey_xsym.py` | a83f540a1a308542b8ab1c2322e529365c2f5cc25f5919fb94e5a9aacfd8a624 | e735d3521b01379b7314af729ac575cfd61bc0968dc980037e0e99a6e749476b |
+
+## Added 20 November 2026: Theorem O-X8 (research/tier1/ramsey-offdiag/, certs/certX8-full.json.gz)
+
+The lane files changed since the 19 November copy were copied again with the same two kinds of edits (status and tier
+sentences in `PROOF.md`; local paths, the working repository's name and "coordinator" in code, logs and certificates).
+The certificate `cert/offdiag_x8_v1.json` differs only in its informational "bank" path field; its 1,751 cells are
+byte-identical, and the checkers identify the bank by SHA-256. `certs/certX8-full.json.gz` unpacks to the lab file
+byte for byte (SHA-256 d3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86). Files whose bytes differ:
+
+| file | SHA-256 in our working repository | SHA-256 here |
+|---|---|---|
+| `research/tier1/ramsey-offdiag/PROOF.md` | e599d4c20e308944d860541eb27e5ec3a769473e7d07f76596e43f1a85d39501 | 332757c12cf6118cb8b1199cbb8ac82f7be865c16affa8a4eac0ee4955b1ddbf |
+| `research/tier1/ramsey-offdiag/cert/offdiag_x8_v1.json` | 7eba8562bf5a479f06f6bdc94ea54cae44efd6736f32fe5403399edaed258b63 | 35abdfa7abc6e11e3f7a801968968a69b5264cd9ed35b45e06d4e00990e25121 |
+| `research/tier1/ramsey-offdiag/code/ramsey_x8_checks.sh` | 50b035fbd5bc7ac6d428534b5a48a2d1660945e1f378e641261c8f4a4f172704 | fa8b57f03403e27f94ee8b04c8f576f9eb52836e281981cea6941d6529009065 |
+| `research/tier1/ramsey-offdiag/code/ramsey_x8_compare.sh` | 81c7681d66566676982f7e391875a39e8d3facd51d245a4ff70e7f05bf8668fc | 8dc6f67e56a2aab80b5686bbabbddf54319bf613499b623dcf7c155444d6437c |
+| `research/tier1/ramsey-offdiag/code/ramsey_x8_red2.sh` | 2e7c2fd97242ce6e3f4f229bb14e4b0cd1da8c0b163841232b7a563252c96568 | 1121d1e3c1437fc0f0ba19daeef71a7bb880543f59d26b564b5f51bf3dcf491e |
+| `research/tier1/ramsey-offdiag/runs/chain_certX8.log` | fd4f7ae2cc115a83f9cbd4273e8b80781fc5c17c26fae0f3645f94dd6e167edb | ca69a378a50ea3dd07f41d154d3373e1a8fa976cfbb3f9053532185479476d4d |
+| `research/tier1/ramsey-offdiag/runs/genext_r8_kp2.log` | 5b8d2aa6ddd556eaab127a4fa3687494e724860cdd0bf2cb2d17a1fb319a477e | 37b8a78eaf39a0e294b2226b1bd2d802c8b936588d2dbab1e5413d98a9e53381 |

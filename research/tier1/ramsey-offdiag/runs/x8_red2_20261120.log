@@ -1,0 +1,8 @@
+06:05:01 gate ok, load 46: make
+made ['r10_unknown_kind.json', 'r11_g_lo_changed.json', 'r12_S_interval_short_below_1_5.json', 'r1_pair_vhi_minus_1e-9.json', 'r2_src_vlo_minus_1e-9.json', 'r3_density_sum_above_1.json', 'r4_tiling_gap.json', 'r5_wrong_bank_sha.json', 'r6_R_interval_misses_cell.json', 'r7_string_index.json', 'r8_src_orientation_swapped.json', 'r9_last_cell_missing.json']
+06:05:29 gate ok, load 46: redA
+06:08:55 gate ok, load 31: redB
+refused OK  r12_S_interval_short_below_1_5.json: REFUSED: cell 89: [1/hi, 1/lo] not in I_S
+red/green failures: 0
+refused OK  r12_S_interval_short_below_1_5.json: REFUSED: cell 89: [1/hi, 1/lo] = [100/17, 2000/339] not inside I_S = [1/80, 51/400] (bank.raw[0])
+red/green failures: 0

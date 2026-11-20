@@ -1,0 +1,34 @@
+23:54:10 gate ok, load 46; System-wide memory free percentage: 59%; disk 38 GB
+START Thu Nov 19 23:54:10 2026 RMAX 8.0 NS 3196 kp 2 rounds 9
+round 0: sources/children 5s; ROOT (point, p=1/2, ratio 1) 1.251267739  [route mu=0.4005 w=0.3674 a=1.04763 b=0.33850]  B(1.0862)=0.321617
+research/tier1/ramsey-offdiag/code/ramsey_gen2_ext.py:410: RuntimeWarning: invalid value encountered in subtract
+  gain = np.where(np.isfinite(newv) & np.isfinite(L), L - newv, np.nan)
+   round 0 done 565s; new pieces 146924; max gain over old envelope 0.86698; L_1/2(1) old 1.252369589 new 1.251399791
+saved after round 0 Fri Nov 20 00:03:37 2026
+round 1: sources/children 3s; ROOT (point, p=1/2, ratio 1) 1.250210667  [route mu=0.4005 w=0.4286 a=1.08778 b=0.32028]  B(1.0862)=0.320964
+   round 1 done 1881s; new pieces 146924; max gain over old envelope 2.66204; L_1/2(1) old 1.251399791 new 1.250379119
+saved after round 1 Fri Nov 20 00:35:00 2026
+round 2: sources/children 4s; ROOT (point, p=1/2, ratio 1) 1.249247473  [route mu=0.4005 w=0.4286 a=1.08778 b=0.31869]  B(1.0862)=0.319365
+   round 2 done 1781s; new pieces 146924; max gain over old envelope 0.02266; L_1/2(1) old 1.250379119 new 1.249490281
+saved after round 2 Fri Nov 20 01:04:43 2026
+round 3: sources/children 4s; ROOT (point, p=1/2, ratio 1) 1.248642581  [route mu=0.4005 w=0.4286 a=1.08778 b=0.31793]  B(1.0862)=0.318596
+   round 3 done 1674s; new pieces 146924; max gain over old envelope 0.00517; L_1/2(1) old 1.249490281 new 1.248811033
+saved after round 3 Fri Nov 20 01:32:40 2026
+round 4: sources/children 4s; ROOT (point, p=1/2, ratio 1) 1.248507378  [route mu=0.4005 w=0.4286 a=1.08778 b=0.31793]  B(1.0862)=0.318596
+   round 4 done 1920s; new pieces 146924; max gain over old envelope 0.00594; L_1/2(1) old 1.248811033 new 1.248726496
+saved after round 4 Fri Nov 20 02:04:44 2026
+round 5: sources/children 4s; ROOT (point, p=1/2, ratio 1) 1.248255979  [route mu=0.4005 w=0.4286 a=1.08778 b=0.31752]  B(1.0862)=0.318241
+   round 5 done 2054s; new pieces 146924; max gain over old envelope 0.00450; L_1/2(1) old 1.248726496 new 1.248396150
+saved after round 5 Fri Nov 20 02:39:04 2026
+round 6: sources/children 6s; ROOT (point, p=1/2, ratio 1) 1.248213352  [route mu=0.4005 w=0.3969 a=1.06708 b=0.32656]  B(1.0862)=0.318197
+   round 6 done 1938s; new pieces 146924; max gain over old envelope 0.00426; L_1/2(1) old 1.248396150 new 1.248391525
+saved after round 6 Fri Nov 20 03:11:28 2026
+round 7: sources/children 5s; ROOT (point, p=1/2, ratio 1) 1.248179718  [route mu=0.4005 w=0.4629 a=1.10984 b=0.30798]  B(1.0862)=0.318197
+   round 7 done 1947s; new pieces 146924; max gain over old envelope 0.00330; L_1/2(1) old 1.248391525 new 1.248491229
+saved after round 7 Fri Nov 20 03:44:01 2026
+round 8: sources/children 6s; ROOT (point, p=1/2, ratio 1) 1.248166689  [route mu=0.4005 w=0.3674 a=1.04763 b=0.33517]  B(1.0862)=0.318197
+   round 8 done 2086s; new pieces 146924; max gain over old envelope 0.00395; L_1/2(1) old 1.248391525 new 1.248491229
+saved after round 8 Fri Nov 20 04:18:55 2026
+round 9: sources/children 6s; ROOT (point, p=1/2, ratio 1) 1.248147981  [route mu=0.4005 w=0.4629 a=1.10984 b=0.30793]  B(1.0862)=0.318197
+END Fri Nov 20 04:19:09 2026
+EXIT 0 04:19:09

@@ -1,0 +1,6 @@
+claim region from cell 70 g = 4/25 ; max Phi(g)/g there = 2.61632479480625
+cells in claim region 1681 passing 1656 ; failing: ['4/25', '321/2000', '161/1000', '323/2000', '81/500', '13/80', '163/1000', '327/2000', '41/250', '329/2000']
+cells below the claim region (tested as ratios y < g): 70 passing 70
+published diagonals above T_last: True
+ratios below 1/5: sources (exact) False ; curves (float, min f(y)/y on [2e-5, 0.2]) 2.443664 vs 2.616325 False
+ALL_OK False

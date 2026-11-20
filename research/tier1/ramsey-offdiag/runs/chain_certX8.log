@@ -1,0 +1,42 @@
+04:19:27 step: refine (load 32.89)
+refine iteration 0: best 1.248069422
+refine iteration 1: best 1.248051631
+refine iteration 2: best 1.248049474
+root: table controls 1.248147981 -> continuous controls 1.248049474  (mu 0.403627 w 0.467590 a 1.1173502)
+04:19:39 step: materialise (load 31.59)
+round 0 materialised: raw 253 closed 1 sources 795 controls 795  188s
+round 1 materialised: raw 422 closed 2 sources 1436 controls 1162  240s
+round 2 materialised: raw 559 closed 3 sources 2114 controls 1380  297s
+round 3 materialised: raw 721 closed 4 sources 2767 controls 1516  350s
+round 4 materialised: raw 923 closed 5 sources 3199 controls 1612  388s
+round 5 materialised: raw 1142 closed 6 sources 3636 controls 1700  444s
+round 6 materialised: raw 1372 closed 7 sources 4029 controls 1759  478s
+round 7 materialised: raw 1615 closed 8 sources 4366 controls 1826  507s
+round 8 materialised: raw 1747 closed 9 sources 4468 controls 1832  517s
+round 9 materialised: raw 1747 closed 10 sources 4468 controls 1832  518s
+certificate written: z = 1248049473997/1000000000000 = 1.248049473997 (float model 1.248049474149); stats {'route_cells': 116186, 'source_pair_intervals': 707693, 'source_bumps': 877, 'source_bump_max_1e-10': 131072, 'U_raised_intervals': 964}
+06739e026402c2bdd165bcafbd4d5c8da4d359a8d7ee80c5c628f7c88c6d3f60  <archive>/ramsey-offdiag/genext/certX8.json
+04:28:24 step: checkA (load 45.58)
+{"checker": "A", "ok": true, "sources": 4469, "raw": 1748, "raw_pieces": 36360, "closed": 11, "controls": 1833, "controls_lemmaD": 0, "claim": "ZBS-only", "z": "1248049473997/1000000000000", "z_float": 1.248049473997, "base_upper": "34835415881/10000000000", "base_upper_dec": "3.4835415881", "seconds": 968.6}
+04:44:32 step: checkB (load 44.07)
+{"checker": "B", "ok": true, "controls_lemmaD": 0, "claim": "ZBS-only", "controls": 1833, "sources": 4469, "raw": 1748, "closed": 11, "z": "1248049473997/1000000000000", "z_float": 1.248049473997, "base_upper": "[3.4835415880442233231606873679205094415037561730689365723422465616050339536844324988131936348453 +/- 7.98e-96]", "seconds": 99.0}
+04:46:12 step: cone (load 34.22)
+{"cert_sha256": "06739e026402c2bdd165bcafbd4d5c8da4d359a8d7ee80c5c628f7c88c6d3f60", "direct_counts": {"zr": 463, "zc": 0, "z": 5}, "direct_ref_occurrences": 25010, "direct_ref_paths": ["$.closed.pieces.R", "$.closed.pieces.S", "$.raw.pieces.calls.ch", "$.raw.pieces.src", "$.raw.pieces.t.src"], "stats": {"raw_profiles": 1902, "closed_profiles": 1001, "sources": 2713, "controls": 918, "leaf_pieces": 9899, "route_pieces": 7284, "route_calls": 304695, "density_pieces": 9907, "pair_pieces": 1685, "source_cells": 1493877, "source_grounded_cells": 255104, "source_pair_cells": 1238773, "zbs_lines_used": 1128}, "min_source_eps_eta": 5e-13, "seconds": 12.9}
+04:46:26 step: assemble (load 37.05)
+{"out_sha256": "d3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86", "refs_replaced_in_our_objects": {"zr": 24997, "zc": 0, "z": 13, "ctl": 0}, "refs_replaced_total": {"zr": 2515820, "zc": 304695, "z": 17196, "ctl": 17183}, "base": {"raw": 1748, "closed": 11, "sources": 4469, "controls": 1833}, "final": {"raw": 3650, "closed": 1012, "sources": 7182, "controls": 2751}, "seconds": 37.9}
+04:47:05 step: structure (load 37.63)
+no ZBS reference ("zr", "zc", "z") anywhere in <archive>/ramsey-offdiag/genext/certX8-full.json
+3094397 profile/source references and 53543 control references in range; counts: raw 3650, closed 1012, sources 7182, controls 2751
+original objects unchanged except references (1748 raw, 11 closed, 4469 sources, 1833 controls)
+appended objects equal the parsed ZBS objects (1902 raw, 1001 closed, 2713 sources, 918 controls)
+FULL CHECK OK
+04:48:09 step: preflight (load 39.50)
+pins: 31 frozen Lemma D files match MANIFEST.sha256; checkA/ivA.py == lemmaD/ivA.py
+<archive>/ramsey-offdiag/genext/certX8-full.json: bank certificate: 2751 controls, 0 of kind Lemma D; 7182 sources, min(eps, eta) = 1/2000000000000 > 8/10^15 (Theorem 5.7 proviso)
+PREFLIGHT OK
+04:48:26 step: checkA_full (load 40.73)
+{"checker": "A", "ok": true, "sources": 7182, "raw": 3650, "raw_pieces": 53543, "closed": 1012, "controls": 2751, "controls_lemmaD": 0, "claim": "ZBS-only", "z": "1248049473997/1000000000000", "z_float": 1.248049473997, "base_upper": "34835415881/10000000000", "base_upper_dec": "3.4835415881", "seconds": 1901.7}
+05:20:09 step: checkB_full (load 54.81)
+{"checker": "B", "ok": true, "controls_lemmaD": 0, "claim": "ZBS-only", "controls": 2751, "sources": 7182, "raw": 3650, "closed": 1012, "z": "1248049473997/1000000000000", "z_float": 1.248049473997, "base_upper": "[3.4835415880442233231606873679205094415037561730689365723422465616050339536844324988131936348453 +/- 7.98e-96]", "seconds": 225.9}
+d3c8cd100f97d7cfcf4ac354d8bd71d5cf6e3c627782ef1049d56ff0177f6e86  <archive>/ramsey-offdiag/genext/certX8-full.json
+CHAIN DONE 05:23:57

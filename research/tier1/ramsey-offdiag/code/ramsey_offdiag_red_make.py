@@ -26,4 +26,11 @@ c = copy.deepcopy(cert); c['cells'][i0]['orient'] = 'AB' if c['cells'][i0]['orie
 c = copy.deepcopy(cert); del c['cells'][-1]; save('r9_last_cell_missing', c)
 c = copy.deepcopy(cert); c['cells'][i9]['kind'] = 'leaf'; save('r10_unknown_kind', c)
 c = copy.deepcopy(cert); c['g_lo'] = '1/4'; save('r11_g_lo_changed', c)
+# r12 (referee 20 Nov, finding 8): a pair cell below 1/5 whose S no longer covers [1/hi, 1/lo] (inside [5, 8])
+low = [i for i, x in enumerate(cells) if x['kind'] == 'pair' and F(x['hi']) < F(1, 5)]
+if low:
+    c = copy.deepcopy(cert); cc = c['cells'][low[len(low) // 2]]; lo, hi = F(cc['lo']), F(cc['hi'])
+    pS = F(bank[cc['S'][0]][cc['S'][1]]['p'])
+    cand = [j for j, r in enumerate(bank['raw']) if F(r['p']) <= pS and F(r['xs'][0]) <= 1 / hi and F(r['xs'][-1]) < 1 / lo]
+    cc['S'] = ['raw', cand[0]]; save('r12_S_interval_short_below_1_5', c)
 print('made', sorted(os.listdir(od)))
