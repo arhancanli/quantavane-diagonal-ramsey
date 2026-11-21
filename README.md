@@ -182,9 +182,28 @@ share no code but were written with the same AI system. No mathematician outside
 repository. The claims rest on the written proofs, which can be read and checked, and on the exact computations, which
 anyone can rerun with the programs here or with their own.
 
-## Licence and citation
+## Licence
 
 The certificates, documents, logs and text are under CC BY 4.0 (`LICENSE`); the code is under the MIT licence
-(`LICENSE-CODE`). Please cite as: Arhan Canli, *R(k,k) ≤ (3.4827 + o(1))^k, unconditionally, and off-diagonal bounds
-for R(k, γk)*, https://github.com/arhancanli/quantavane-diagonal-ramsey (2026), together with Zhao–Booth-Clibborn–
-Schwahn, Lu–Wang, EvolvingPrograms, Campos–Griffiths–Morris–Sahasrabudhe and Gupta–Ndiaye–Norin–Wei.
+(`LICENSE-CODE`).
+
+## How to cite
+
+Please cite as: Arhan Canli, *R(k,k) ≤ (3.4827 + o(1))^k, unconditionally, and off-diagonal bounds for R(k, γk)*,
+https://github.com/arhancanli/quantavane-diagonal-ramsey (2026), together with Zhao–Booth-Clibborn–Schwahn, Lu–Wang,
+EvolvingPrograms, Campos–Griffiths–Morris–Sahasrabudhe and Gupta–Ndiaye–Norin–Wei.
+
+```bibtex
+@misc{quantavane-diagonal-ramsey,
+  author       = {Canli, Arhan},
+  title        = {{$R(k,k) \le (3.4827 + o(1))^k$}, unconditionally, and off-diagonal bounds for {$R(k, \gamma k)$}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/arhancanli/quantavane-diagonal-ramsey}},
+  note         = {Quantavane; CC BY 4.0; code MIT}
+}
+```
+
+[CITATION.cff](CITATION.cff) gives the same reference for GitHub's "Cite this repository" button.
+
+Known uses of this work are listed in [USED_BY.md](USED_BY.md). If you use it, please open an issue or a pull request
+with a link so that yours can be added.
